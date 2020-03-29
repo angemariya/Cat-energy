@@ -19,8 +19,75 @@
       </nav>
     </header>
     <main>
+      <h1 class="page-title">Подбор программы</h1>
+      <p class="page-desrc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <section class="form">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="source-data">
+            <label for="name">Имя:*</label>
+            <input type="text" id="name" name="name" value="Барсик">
+            <label for="weight">Вес (кг):*</label>
+            <input type="text" id="weight" name="weight" value="7">
+            <label for="age">Возраст (лет):</label>
+            <input type="text" id="age" name="age" value="7">
+          </fieldset>
 
+          <fieldset class="goal">
+            <label>
+              <input type="radio" name="weight" value="weight-loss" checked>
+              Похудение
+            </label>
+            <label>
+              <input type="radio" name="weight" value="weight-gain">
+              Набор массы
+            </label>
+            <label>
+              <input type="radio" name="weight" value="need-advice">
+              Не знаю (нужен ваш совет)
+            </label>
+          </fieldset>
+
+          <fieldset class="contacts">
+            <legend class="form-title">Контактные данные (владельца кота)</legend>
+            <label for="email">E-mail:*</label>
+            <input id="email" name="email" type="text" value="kuklachev@gmail.com">
+            <label for="phone">Телефон:*</label>
+            <input id="phone" name="phone" type="text" value="8 (960) 900-60-90">
+          </fieldset>
+
+          <fieldset>
+            <legend class="form-title">Комментарий</legend>
+            <textarea>Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+
+          <fieldset class="additional">
+            <legend class="form-title">Дополнительно</legend>
+            <input type="checkbox" id="sweetener" name="additional-item" checked>
+            <label for="sweetener">Сахарозаменитель</label>
+            <input type="checkbox" id="water" name="additional-item">
+            <label for="water">Питьевая вода</label>
+            <input type="checkbox" id="milk" name="additional-item">
+            <label for="milk">Молоко</label>
+            <input type="checkbox" id="vitamins" name="additional-item">
+            <label for="vitamins">Витамины</label>
+          </fieldset>
+
+          <input class="card-button" type="button" value="Отправить заявку">
+          <small class="tip">* — Обязательные поля</small>
+        </form>
+      </section>
+
+      <section class="map">
+        <div class="adress">
+          <p class="adress__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="adress__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="map-wrapper">
+          <img class="map-wrapper__img" src="#" alt="Расположение магазина на карте" width="320" height="400">
+        </div>
+      </section>
     </main>
+
     <footer class="footer">
       <a class="logo-text" href="#" aria-label="На главную страницу">
         <img src="#" alt="Логотип Cat Energy" width="128" height="24">
