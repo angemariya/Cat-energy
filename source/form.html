@@ -19,69 +19,72 @@
       </nav>
     </header>
     <main>
+
       <h1 class="page-title">Подбор программы</h1>
       <p class="page-desrc">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <section class="form">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="source-data">
-            <label for="name">Имя:*</label>
-            <input type="text" id="name" name="name" value="Барсик">
-            <label for="weight">Вес (кг):*</label>
-            <input type="text" id="weight" name="weight" value="7">
-            <label for="age">Возраст (лет):</label>
-            <input type="text" id="age" name="age" value="7">
+
+      <section>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__fieldset">
+            <label class="form__label form__label--text" for="name">Имя:*</label>
+            <input class="form__control form__control--text" type="text" id="name" name="name" placeholder="Барсик" required>
+            <label class="form__label form__label--text" for="weight">Вес (кг):*</label>
+            <input class="form__control form__control--text" type="text" id="weight" name="weight" placeholder="7" required>
+            <label class="form__label form__label--text" for="age">Возраст (лет):</label>
+            <input class="form__control form__control--text" type="text" id="age" name="age" placeholder="7">
           </fieldset>
 
-          <fieldset class="goal">
-            <label>
-              <input type="radio" name="weight" value="weight-loss" checked>
+          <fieldset class="form__fieldset">
+            <label class="form__label form__label--radio">
+              <input class="form__control form__control--radio" type="radio" name="weight" value="weight-loss" checked>
               Похудение
             </label>
-            <label>
-              <input type="radio" name="weight" value="weight-gain">
+            <label class="form__label form__label--radio">
+              <input class="form__control form__control--radio" type="radio" name="weight" value="weight-gain">
               Набор массы
             </label>
-            <label>
-              <input type="radio" name="weight" value="need-advice">
+            <label class="form__label form__label--radio">
+              <input class="form__control form__control--radio" type="radio" name="weight" value="need-advice">
               Не знаю (нужен ваш совет)
             </label>
           </fieldset>
 
-          <fieldset class="contacts">
-            <legend class="form-title">Контактные данные (владельца кота)</legend>
-            <label for="email">E-mail:*</label>
-            <input id="email" name="email" type="text" value="kuklachev@gmail.com">
-            <label for="phone">Телефон:*</label>
-            <input id="phone" name="phone" type="text" value="8 (960) 900-60-90">
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Контактные данные (владельца кота)</legend>
+            <label class="form__label form__label--email" for="email">E-mail:*</label>
+            <input class="form__control" id="email" name="email" type="text" placeholder="kuklachev@gmail.com" required>
+            <label class="form__label form__label--phone" for="phone">Телефон:*</label>
+            <input class="form__control" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
           </fieldset>
 
-          <fieldset>
-            <legend class="form-title">Комментарий</legend>
-            <textarea>Расскажите обо всех повадках кота</textarea>
+          <fieldset class="form__fieldset">
+            <legend class="form__title form__title--textarea">Комментарий</legend>
+            <textarea class="form__control form__control--textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
-          <fieldset class="additional">
-            <legend class="form-title">Дополнительно</legend>
-            <input type="checkbox" id="sweetener" name="additional-item" checked>
-            <label for="sweetener">Сахарозаменитель</label>
-            <input type="checkbox" id="water" name="additional-item">
-            <label for="water">Питьевая вода</label>
-            <input type="checkbox" id="milk" name="additional-item">
-            <label for="milk">Молоко</label>
-            <input type="checkbox" id="vitamins" name="additional-item">
-            <label for="vitamins">Витамины</label>
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Дополнительно</legend>
+            <input class="form__control form__control--checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
+            <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
+            <input class="form__control form__control--checkbox" type="checkbox" id="water" name="water">
+            <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
+            <input class="form__control form__control--checkbox" type="checkbox" id="milk" name="milk">
+            <label class="form__label  form__label--checkbox" for="milk">Молоко</label>
+            <input class="form__control form__control--checkbox" type="checkbox" id="vitamins" name="vitamins">
+            <label class="form__label  form__label--checkbox" for="vitamins">Витамины</label>
           </fieldset>
 
-          <input class="card-button" type="button" value="Отправить заявку">
+          <input class="card-button" type="submit" value="Отправить заявку">
           <small class="tip">* — Обязательные поля</small>
         </form>
       </section>
 
-      <section class="map">
-        <div class="adress">
-          <p class="adress__title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="adress__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="contact">
+        <div class="contact__address">
+          <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contact__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
+
         <div class="map-wrapper">
           <img class="map-wrapper__img" src="#" alt="Расположение магазина на карте" width="320" height="400">
         </div>
