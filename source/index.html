@@ -39,7 +39,7 @@
         </div>
       </section>
       <section class="preferences">
-        <h2 class="preferences__header">Как это работает</h2>
+        <h2 class="preferences__header section-header">Как это работает</h2>
         <ul class="preferences__list">
           <li class="preferences__item preferences__item--healthy">
             <p>Функциональное питание содержит только полезные питательные вещества.</p>
@@ -57,10 +57,10 @@
       </section>
 
       <section class="example">
-        <h2 class="section-header">Живой пример</h2>
-        <p class="section-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="stats">
-          <table class="stats__table">
+        <h2 class="example__header section-header">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__stats">
+          <table class="example__table">
             <tr>
               <td>5 кг</td>
               <td>снижение веса</td>
@@ -70,24 +70,30 @@
               <td>затрачено времени</td>
             </tr>
           </table>
-          <p class="stats__calculate">Затраты на питание: 15 000 руб.</p>
+          <p class="example__calculate">Затраты на питание: 15 000 руб.</p>
         </div>
 
         <div class="difference">
           <img class="difference__img" alt="Различия в весе кота" width="311" height="232">
-          <span>Было</span>
-          <input class="difference__range" type="range"> <!--Просто для примера, я думаю тут точно не input-->
-          <span>Стало</span>
+          <button class="difference__btn" type="button">Было</button>
+          <div class="difference__range">
+            <div class="difference__scale">
+              <div class="difference__bar"></div>
+            </div>
+            <div class="difference__toggle"></div>
+          </div>
+          <button class="difference__btn" type="button">Стало</button>
         </div>
       </section>
 
-      <section class="map">
-        <div class="adress">
-          <p class="adress__title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="adress__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="contact">
+        <div class="contact__address">
+          <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contact__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
+
         <div class="map-wrapper">
-          <img class="map-wrapper__img" src="#" width="320" height="400" alt="Расположение магазина на карте">
+          <img class="map-wrapper__img" src="#" alt="Расположение магазина на карте" width="320" height="400">
         </div>
       </section>
     </main>
