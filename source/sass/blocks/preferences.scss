@@ -5,6 +5,7 @@
 .preferences__item p {
   line-height: 1.29;
   font-family: $font-a;
+  color: $grey-text;
 
   @include text(none, 14px);
 }
