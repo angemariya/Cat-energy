@@ -1,0 +1,38 @@
+.good-card {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid $inside;
+  border-bottom: none;
+}
+
+.good-card__title {
+  @include text(uppercase, 16px);
+  font-weight: 400;
+  color: $black-title;
+  text-align: center;
+}
+
+.good-card__text {
+  font-family: $font-a;
+  color: $black-title;
+  text-align: center;
+
+  @include text (none, 12px);
+}
+
+.good-card__description {
+  margin-bottom: 23px;
+}
+
+.good-card__description tr {
+  font-family: $font-a;
+  color: $grey-text;
+
+  @include text(none, 12px);
+}
+
+.good-card__description td:nth-of-type(2) {
+  text-align: right;
+}

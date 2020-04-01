@@ -1,0 +1,25 @@
+.program {
+  background-color: $grey;
+  width: 280px;
+  min-height: 266px;
+  padding: 21px;
+}
+
+.program__header {
+  @include text (uppercase, 24px);
+  font-weight: 400;
+  color: $black-title;
+}
+
+.program__text {
+  font-family: $font-a;
+  color: $grey-text;
+
+  @include text (none, 14px);
+  line-height: 1.29;
+}
+
+.program__link {
+  text-transform: uppercase;
+  text-align: left;
+}

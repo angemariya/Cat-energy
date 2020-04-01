@@ -1,0 +1,17 @@
+.card-button {
+  @include text(uppercase, 16px);
+
+  color: white;
+  background-color: $green;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  padding-top: 12px;
+  box-sizing: border-box;
+  display: block;
+
+  &--grey {
+    background-color: $grey;
+    color: $grey-text;
+  }
+}

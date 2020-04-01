@@ -1,0 +1,5 @@
+.section-header {
+  @include text (none, 36px);
+  font-weight: 400;
+  color: $black-title;
+}

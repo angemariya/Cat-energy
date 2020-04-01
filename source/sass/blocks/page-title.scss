@@ -1,0 +1,6 @@
+.page-title {
+  font-weight: 400;
+  color: $black-title;
+
+  @include text(none, 36px);
+}

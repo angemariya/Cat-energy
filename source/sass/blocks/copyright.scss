@@ -1,0 +1,5 @@
+.copyright__text {
+  font-family: $font-a;
+
+  @include text (none, 16px);
+}

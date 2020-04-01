@@ -1,0 +1,14 @@
+.nav-list {
+  @include ul-reset ();
+}
+
+.nav-list__item {
+  @include text(uppercase, 20px);
+  font-weight: 500;
+  width: 320px;
+  height: 65px;
+  border-top: 1px solid $inside;
+  border-bottom: 1px solid $inside;
+  padding-top: 24px;
+  text-align: center;
+}
