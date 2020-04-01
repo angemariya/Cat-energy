@@ -1,0 +1,6 @@
+.difference__btn {
+  border: none;
+
+  @include text (uppercase, 16px);
+  color: $black-title;
+}

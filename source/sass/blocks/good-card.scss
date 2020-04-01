@@ -9,10 +9,15 @@
 
 .good-card__title {
   @include text(uppercase, 16px);
+  font-weight: 400;
+  color: $black-title;
+  text-align: center;
 }
 
 .good-card__text {
   font-family: $font-a;
+  color: $black-title;
+  text-align: center;
 
   @include text (none, 12px);
 }

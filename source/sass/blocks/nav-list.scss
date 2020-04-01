@@ -1,5 +1,5 @@
 .nav-list {
-  list-style: none;
+  @include ul-reset ();
 }
 
 .nav-list__item {

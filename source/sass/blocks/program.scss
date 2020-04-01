@@ -8,10 +8,12 @@
 .program__header {
   @include text (uppercase, 24px);
   font-weight: 400;
+  color: $black-title;
 }
 
 .program__text {
   font-family: $font-a;
+  color: $grey-text;
 
   @include text (none, 14px);
   line-height: 1.29;

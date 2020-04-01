@@ -1,0 +1,11 @@
+.contact__title {
+  @include text (uppercase, 16px);
+  color: $black-title;
+  text-align: left;
+}
+
+.contact__descr {
+  @include text (none, 14px);
+  font-family: $font-a;
+  color: $grey-text;
+}

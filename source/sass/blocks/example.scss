@@ -1,0 +1,38 @@
+.example {
+  background-color: $grey;
+}
+
+.example__text {
+  font-family: $font-a;
+
+  @include text (none, 14px);
+  line-height: 1.29;
+  text-align: left;
+  color: $grey-text;
+}
+
+.example__table td {
+  width: 124px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+}
+
+.example__table td:nth-child(1) {
+  @include text (uppercase, 24px);
+  color: $black-title;
+  text-align: center;
+  border: 1px solid $radio;
+}
+
+.example__table td:nth-child(2) {
+  @include text (lowercase, 12px);
+  font-family: $font-a;
+  color: $grey-text;
+  text-align: center;
+}
+
+.example__calculate {
+  @include text (uppercase, 14px);
+  text-align: center;
+  color: $black-title;
+}
