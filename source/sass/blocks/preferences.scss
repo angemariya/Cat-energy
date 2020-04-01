@@ -1,9 +1,11 @@
 .preferences {
-  &__list{
+  &__list {
     list-style: none;
   }
+
   &__item {
-    font-family: "Arial";
+    font-family: $font-a;
+
     @include text(normal, 14px);
   }
 }

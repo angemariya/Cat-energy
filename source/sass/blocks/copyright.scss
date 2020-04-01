@@ -1,6 +1,7 @@
 .copyright {
-  &__text{
-    font-family: "Arial";
+  &__text {
+    font-family: $font-a;
+
     @include text (normal, 16px);
   }
 }

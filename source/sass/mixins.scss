@@ -1,4 +1,4 @@
-@mixin text ($text-transform, $font-size){
+@mixin text ($text-transform, $font-size) {
   text-transform: $text-transform;
   font-size: $font-size;
 }

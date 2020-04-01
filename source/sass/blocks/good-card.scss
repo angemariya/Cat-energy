@@ -1,22 +1,28 @@
-.good-card{
+.good-card {
   padding-top: 24px;
   padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
   border: 1px solid $inside;
   border-bottom: none;
-  &__title{
+
+  &__title {
     @include text(uppercase, 16px);
   }
+
   &__text {
-    font-family: "Arial";
+    font-family: $font-a;
+
     @include text (normal, 12px);
   }
-  &__description{
+
+  &__description {
     margin-bottom: 23px;
-    & tr{
-      font-family: "Arial";
+
+    & tr {
+      font-family: $font-a;
       color: $grey-text;
+
       @include text(normal, 12px);
     }
   }

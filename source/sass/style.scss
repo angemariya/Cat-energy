@@ -2,36 +2,16 @@
 @import "variables.scss";
 @import "font.scss";
 @import "global.scss";
-
 @import "mixins.scss";
 //index.html
-@import "blocks/nav.scss";
-@import "blocks/nav-logo.scss";
-@import "blocks/nav-toggle.scss";
 @import "blocks/nav-list.scss";
 @import "blocks/promo.scss";
-@import "blocks/programs.scss";
 @import "blocks/program.scss";
 @import "blocks/preferences.scss";
 @import "blocks/section-header.scss";
-@import "blocks/example.scss";
-@import "blocks/difference.scss";
-@import "blocks/contact.scss";
-@import "blocks/map-wrapper.scss";
-@import "blocks/footer.scss";
-@import "blocks/logo-text.scss";
-@import "blocks/social-links.scss";
 @import "blocks/copyright.scss";
 //catalog.html
-@import "blocks/catalog-page.scss";
 @import "blocks/page-title.scss";
-@import "blocks/goods-main.scss";
 @import "blocks/goods-main-list.scss";
 @import "blocks/good-card.scss";
 @import "blocks/card-button.scss";
-@import "blocks/goods-additional.scss";
-@import "blocks/additional-item.scss";
-@import "blocks/present.scss";
-//form.html
-@import "blocks/form.scss";
-@import "blocks/tip.scss";
