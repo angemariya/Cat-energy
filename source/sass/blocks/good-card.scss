@@ -5,25 +5,29 @@
   padding-right: 20px;
   border: 1px solid $inside;
   border-bottom: none;
+}
 
-  &__title {
-    @include text(uppercase, 16px);
-  }
+.good-card__title {
+  @include text(uppercase, 16px);
+}
 
-  &__text {
-    font-family: $font-a;
+.good-card__text {
+  font-family: $font-a;
 
-    @include text (normal, 12px);
-  }
+  @include text (none, 12px);
+}
 
-  &__description {
-    margin-bottom: 23px;
+.good-card__description {
+  margin-bottom: 23px;
+}
 
-    & tr {
-      font-family: $font-a;
-      color: $grey-text;
+.good-card__description tr {
+  font-family: $font-a;
+  color: $grey-text;
 
-      @include text(normal, 12px);
-    }
-  }
+  @include text(none, 12px);
+}
+
+.good-card__description td:nth-of-type(2) {
+  text-align: right;
 }

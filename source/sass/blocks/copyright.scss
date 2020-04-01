@@ -1,7 +1,5 @@
-.copyright {
-  &__text {
-    font-family: $font-a;
+.copyright__text {
+  font-family: $font-a;
 
-    @include text (normal, 16px);
-  }
+  @include text (none, 16px);
 }

@@ -2,6 +2,12 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -14,4 +20,8 @@ body {
 a {
   text-decoration: none;
   color: $black-title;
+}
+
+main {
+  width: 320px;
 }

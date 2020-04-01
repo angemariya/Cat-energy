@@ -1,18 +1,23 @@
 .program {
   background-color: $grey;
+  width: 280px;
+  min-height: 266px;
+  padding: 21px;
+}
 
-  &__header {
-    @include text (uppercase, 24px);
-  }
+.program__header {
+  @include text (uppercase, 24px);
+  font-weight: 400;
+}
 
-  &__text {
-    font-family: "Arial", sans-serif;
+.program__text {
+  font-family: $font-a;
 
-    @include text (normal, 14px);
-    line-height: 1.29;
-  }
+  @include text (none, 14px);
+  line-height: 1.29;
+}
 
-  &__link {
-    text-transform: uppercase;
-  }
+.program__link {
+  text-transform: uppercase;
+  text-align: left;
 }

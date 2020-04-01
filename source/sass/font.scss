@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family: "Arial";
-  src: local("Arial");
-  font-weight: 400;
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }

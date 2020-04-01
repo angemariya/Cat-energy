@@ -1,11 +1,9 @@
-.preferences {
-  &__list {
-    list-style: none;
-  }
+.preferences__list {
+  list-style: none;
+}
 
-  &__item {
-    font-family: $font-a;
+.preferences__item {
+  font-family: $font-a;
 
-    @include text(normal, 14px);
-  }
+  @include text(none, 14px);
 }

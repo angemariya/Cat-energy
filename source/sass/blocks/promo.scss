@@ -1,25 +1,32 @@
 .promo {
   background-color: $green;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   width: 320px;
   height: 305px;
+}
 
-  &__header {
-    color: white;
-    font-size: 36px;
-    font-weight: 400;
-  }
+.promo__header {
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+}
 
-  &__text {
-    color: white;
+.promo__text {
+  color: white;
 
-    @include text (uppercase, 14px);
-  }
+  @include text (uppercase, 14px);
+}
 
-  &__button {
-    color: white;
+.promo__button {
+  display: block;
+  color: white;
+  background-color: $green;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  padding-top: 14px;
+  margin-top: 135px;
 
-    @include text (uppercase, 14px);
-  }
+  @include text (uppercase, 14px);
 }
