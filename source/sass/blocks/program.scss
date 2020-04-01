@@ -1,0 +1,14 @@
+.program {
+  background-color: $grey;
+  &__header{
+    @include text (uppercase, 24px);
+  }
+  &__text{
+    font-family: "Arial";
+    @include text (normal, 14px);
+    line-height: 1.29;
+  }
+  &__link{
+    text-transform: uppercase;
+  }
+}

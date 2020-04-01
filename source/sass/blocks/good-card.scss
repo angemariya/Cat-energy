@@ -1,0 +1,23 @@
+.good-card{
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid $inside;
+  border-bottom: none;
+  &__title{
+    @include text(uppercase, 16px);
+  }
+  &__text {
+    font-family: "Arial";
+    @include text (normal, 12px);
+  }
+  &__description{
+    margin-bottom: 23px;
+    & tr{
+      font-family: "Arial";
+      color: $grey-text;
+      @include text(normal, 12px);
+    }
+  }
+}

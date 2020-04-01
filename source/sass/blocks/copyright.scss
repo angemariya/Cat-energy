@@ -1,0 +1,6 @@
+.copyright {
+  &__text{
+    font-family: "Arial";
+    @include text (normal, 16px);
+  }
+}

@@ -1,0 +1,6 @@
+.nav-list {
+  list-style: none;
+  &__item {
+    @include text(uppercase, 20px)
+    }
+  }

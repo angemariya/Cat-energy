@@ -1,0 +1,21 @@
+.promo {
+  background-color: $green;
+  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 305px;
+
+    &__header {
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+  }
+    &__text {
+      color: white;
+      @include text (uppercase, 14px);
+    }
+    &__button{
+      color: white;
+      @include text (uppercase, 14px);
+    }
+}
