@@ -1,0 +1,5 @@
+.page-descr {
+  @include text (uppercase, 14px);
+  text-align: left;
+  color: $black-title;
+}

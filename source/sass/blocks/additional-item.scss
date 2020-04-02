@@ -1,0 +1,24 @@
+.additional-item {
+  border-top: 1px solid $inside;
+  border-bottom: 1px solid $inside;
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
+
+.additional-item__text {
+  @include text (uppercase, 16px);
+  text-align: left;
+  color: $black-brown;
+  margin: 0;
+}
+
+.additional-item__table tr {
+  font-family: $font-a;
+
+  @include text (none, 14px);
+  color: $grey-text;
+}
+
+.additional-item__table td:nth-child(2) {
+  text-align: right;
+}

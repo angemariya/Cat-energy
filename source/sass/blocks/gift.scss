@@ -1,0 +1,14 @@
+.gift {
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 289px;
+}
+
+.gift__text {
+  color: white;
+
+  @include text (none, 16px);
+  font-family: $font-a;
+  line-height: 1.25;
+}

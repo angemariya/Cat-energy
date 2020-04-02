@@ -15,3 +15,8 @@
     color: $grey-text;
   }
 }
+
+.card-button[type="submit"] {
+  border: none;
+  padding-bottom: 12px;
+}

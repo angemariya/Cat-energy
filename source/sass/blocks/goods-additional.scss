@@ -1,0 +1,11 @@
+.goods-additional__title {
+  color: $black-title;
+  text-align-last: left;
+
+  @include text (none, 24px);
+  font-weight: normal;
+}
+
+.goods-additional__list {
+  @include ul-reset;
+}
