@@ -1,0 +1,6 @@
+.tip {
+  @include text (none, 14px);
+  font-family: $font-a;
+  text-align: center;
+  color: $grey-text;
+}
