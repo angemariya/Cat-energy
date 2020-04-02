@@ -20,7 +20,6 @@
 
 .form__title {
   @include text (none, 24px);
-  text-align: left;
   color: $black-title;
 }
 
