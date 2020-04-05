@@ -1,6 +1,11 @@
+.copyright {
+  min-height: 78px;
+}
+
 .copyright__text {
   font-family: $font-a;
 
   @include text (none, 16px);
   color: $grey-text;
+
 }

@@ -1,0 +1,9 @@
+
+@media (min-width: $desktop-width) {
+  .programs {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

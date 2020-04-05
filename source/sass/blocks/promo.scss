@@ -1,9 +1,31 @@
 .promo {
-  background-color: $green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  width: 320px;
-  height: 305px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.promo__wrapper {
+  min-height: 305px;
+  padding-top: 29px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient($green);
+  z-index: -1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 260px;
+    left: 0;
+    right: 0;
+    display: block;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 305px;
+  }
 }
 
 .promo__header {
@@ -11,12 +33,15 @@
   font-size: 36px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  margin-bottom: 19px;
 }
 
 .promo__text {
   display: block;
   color: white;
   text-align: center;
+  margin: 0;
 
   @include text (uppercase, 14px);
   margin-bottom: 23px;
@@ -30,6 +55,98 @@
   height: 40px;
   text-align: center;
   padding-top: 14px;
+  margin: 0 auto;
+  margin-top: 135px;
 
   @include text (uppercase, 14px);
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: none;
+  }
+
+  .promo__wrapper {
+    background-image: none;
+    background-color: white;
+    margin-left: 120px;
+    padding-top: 0;
+    min-height: 178px;
+    width: 420px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo__header {
+    color: $black-title;
+    text-align: left;
+
+    @include text (none, 60px);
+    margin-bottom: 33px;
+  }
+
+  .promo__text {
+    color: $black-title;
+    text-align: left;
+    margin-bottom: 0;
+
+    @include text (uppercase, 20px);
+  }
+
+  .promo__button {
+    width: 245px;
+    height: 52px;
+    margin-top: 48px;
+    margin-left: 121px;
+    padding: 16px 27px;
+    font-size: 20px;
+  }
+
+  .promo__image {
+    order: 2;
+    width: 709px;
+    height: 609px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 696px;
+    flex-direction: column;
+    background-image: linear-gradient(to right, white 50%, $green 50%);
+    z-index: -2;
+    position: relative;
+  }
+
+  .promo__wrapper {
+    margin-top: 226px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 76px;
+      left: 50%;
+      display: block;
+      z-index: -1;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: 720px 696px;
+      background-repeat: no-repeat;
+      background-position: top top;
+      height: 696px;
+      width: 720px;
+    }
+  }
+
+  .promo__image {
+    position: absolute;
+    right: 100px;
+  }
+
+  .promo__button {
+    order: 1;
+    margin-bottom: 268px;
+  }
 }

@@ -3,3 +3,9 @@
   font-weight: 400;
   color: $black-title;
 }
+
+@media (min-width: $tablet-width) {
+  .section-header {
+    font-size: 60px;
+  }
+}
