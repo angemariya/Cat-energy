@@ -1,10 +1,19 @@
 .good-card {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 24px;
   border: 1px solid $inside;
   border-bottom: none;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey;
+    box-sizing: border-box;
+    border: none;
+    padding: 36px;
+    padding-top: 165px;
+
+    &:nth-of-type(2n) {
+      margin-right: 60px;
+    }
+  }
 }
 
 .good-card__title {
@@ -12,6 +21,9 @@
   font-weight: 400;
   color: $black-title;
   text-align: center;
+  margin: 0;
+  width: 75px;
+  margin-bottom: 18px;
 }
 
 .good-card__text {
@@ -22,8 +34,22 @@
   @include text (none, 12px);
 }
 
+.good-card__wrapper {
+  display: flex;
+  flex-direction: row;
+
+  &--grey {
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
 .good-card__description {
   margin-bottom: 23px;
+  width: 100%;
 }
 
 .good-card__description tr {
@@ -31,6 +57,8 @@
   color: $grey-text;
 
   @include text(none, 12px);
+  display: flex;
+  justify-content: space-between;
 }
 
 .good-card__description td:nth-of-type(2) {
