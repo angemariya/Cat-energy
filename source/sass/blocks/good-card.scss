@@ -47,6 +47,7 @@
   @include text (none, 12px);
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
     width: 165px;
   }
 }
