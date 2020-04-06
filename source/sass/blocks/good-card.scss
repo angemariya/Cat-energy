@@ -31,8 +31,9 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 28px;
     font-size: 20px;
     width: 128px;
   }
@@ -62,14 +63,33 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .good-card__wrapper-sm {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .good-card__element:nth-child(1) {
+    text-align: left;
+  }
+
+  .good-card__element:nth-child(2) {
+    text-align: right;
   }
 }
 
@@ -78,14 +98,13 @@
   width: 100%;
 }
 
-.good-card__description tr {
+.good-card__row {
   font-family: $font-a;
   color: $grey-text;
 
   @include text(none, 12px);
   display: flex;
   justify-content: space-between;
-  min-width: 250px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -93,12 +112,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    .good-card__element:nth-child(1) {
-      text-align: left;
-    }
-
-    .good-card__element:nth-child(2) {
-      text-align: right;
+    .good-card__row {
+      width: 169px;
     }
   }
 }
