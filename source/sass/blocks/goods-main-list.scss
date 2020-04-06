@@ -1,15 +1,19 @@
 .goods-main-list {
   @include ul-reset;
 
-  /*
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-*/
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }

@@ -1,0 +1,6 @@
+.white-card {
+    @media (min-width: $tablet-width) {
+    background-color: white;
+    border: 1px solid $inside;
+  }
+}

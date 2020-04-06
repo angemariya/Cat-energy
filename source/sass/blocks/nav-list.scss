@@ -45,5 +45,19 @@
 
   .nav-list__item {
     font-weight: 400;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 168px;
+        height: 2px;
+        background-color: $green;
+        top: 80px;
+        right: 0;
+      }
+    }
   }
 }

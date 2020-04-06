@@ -18,6 +18,10 @@
   @media (min-width: $tablet-width) {
     width: 250px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .card-button[type="submit"] {
