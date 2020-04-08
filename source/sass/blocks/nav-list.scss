@@ -1,6 +1,5 @@
 .nav-list {
   @include ul-reset ();
-  width: auto;
   display: flex;
   flex-direction: column;
 }
@@ -18,23 +17,38 @@
 
 @media (min-width: $tablet-width) {
   .nav-list {
-    width: auto;
-    margin: 0;
-    flex-grow: 1;
     flex-direction: row;
-    justify-content: space-around;
-    padding-top: 0;
+    flex-grow: 1;
+    width: 100%;
   }
 
   .nav-list__item {
     border: none;
-    padding-top: 47px;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 65px;
+        height: 2px;
+        background-color: $green;
+        top: 55px;
+        right: 0;
+      }
+    }
+  }
+
+  .nav-list__link {
+    font-size: 18px;
+    margin-left: 38px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .nav-list {
-    width: 500px;
+    width: auto;
     flex-grow: 0;
   }
 

@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav class="nav top-block">
         <div class="nav-wrapper">
           <a class= "nav-logo" href="#">
-            <img class="nav-logo__image" src="#" width="191" height="39" alt="Логотип Кэт энерджи">
+            <img class="nav-logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
           </a>
-          <button class="nav-toggle" type="button"><span></span></button>
+          <button class="nav-toggle" type="button"><span class="nav-toggle__hamburger" aria-label="Меню"></span></button>
         </div>
         <ul class="nav-list">
           <li class="nav-list__item nav-list__item--active"><a class="nav-list__link">Главная</a></li>
@@ -23,12 +23,12 @@
       </nav>
     </header>
     <main>
-      <section class="promo">
+      <section class="promo container">
         <div class="promo__wrapper">
           <h1 class="promo__header">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
         </div>
-        <img class="promo__image" src="#" alt="Банка питания Кэт Энерджи-Курица" width="280" height="270">
+        <img class="promo__image" aria-label="Банка питания Кэт Энерджи-Курица" width="280" height="270">
         <a class="promo__button" href="#">Подобрать программу</a>
       </section>
       <section class="programs container">
@@ -62,61 +62,68 @@
         </ul>
       </section>
 
-      <section class="example container">
-        <h2 class="example__header section-header">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__stats">
-          <table class="example__table">
-            <tr>
-              <td>5 кг</td>
-              <td>снижение веса</td>
-            </tr>
-            <tr>
-              <td>60 дней</td>
-              <td>затрачено времени</td>
-            </tr>
-          </table>
-          <p class="example__calculate">Затраты на питание: 15 000 руб.</p>
-        </div>
-
-        <div class="difference">
-          <img class="difference__img" src="#" alt="Различия в весе кота" width="311" height="232">
-          <button class="difference__btn" type="button">Было</button>
-          <div class="difference__range">
-            <div class="difference__scale">
-              <div class="difference__bar"></div>
-            </div>
-            <div class="difference__toggle"></div>
+      <section class="example">
+        <div class="container">
+          <h2 class="example__header section-header">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__stats">
+            <table class="example__table">
+              <tr>
+                <td>5 кг</td>
+                <td>снижение веса</td>
+              </tr>
+              <tr>
+                <td>60 дней</td>
+                <td>затрачено времени</td>
+              </tr>
+            </table>
+            <p class="example__calculate">Затраты на питание: 15 000 руб.</p>
           </div>
-          <button class="difference__btn" type="button">Стало</button>
+
+          <div class="difference">
+            <img class="difference__img" src="#" alt="Различия в весе кота" width="311" height="232">
+            <button class="difference__btn" type="button">Было</button>
+            <div class="difference__range">
+              <div class="difference__scale">
+                <div class="difference__bar"></div>
+              </div>
+              <div class="difference__toggle"></div>
+            </div>
+            <button class="difference__btn" type="button">Стало</button>
+          </div>
         </div>
       </section>
 
       <section class="contact">
-        <div class="contact__address">
-          <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contact__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-
-        <div class="map-wrapper">
-          <img class="map-wrapper__img" src="#" alt="Расположение магазина на карте" width="320" height="400">
+        <div class="container">
+          <div class="contact__address">
+            <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
+            <p class="contact__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
+          <div class="map-wrapper">
+            <img class="map-wrapper__img" src="#" alt="Расположение магазина на карте" width="320" height="400">
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="logo-text" href="#" aria-label="На главную страницу">
-        <img src="#" alt="Логотип Cat Energy" width="128" height="24">
-      </a>
-      <ul class="social-links">
-        <li><a class="social-links__link" href="#" aria-label="Вконтакте"></a></li>
-        <li><a class="social-links__link" href="#" aria-label="Инстаграм"></a></li>
-        <li><a class="social-links__link" href="#" aria-label="Фейсбук"></a></li>
-      </ul>
-      <div class="copyright">
-        <span class="copyright__text">HTML Academy</span>
-        <a class="copyright__logo" href="#" aria-label="На страницу HTML Academy">
-          <img src="#" alt="Логотип HTML Academy">
-        </a>
+      <div class="container">
+        <div class="footer__wrapper">
+          <a class="logo-text" href="#" aria-label="На главную страницу">
+            <img src="#" alt="Логотип Cat Energy" width="128" height="24">
+          </a>
+          <ul class="social-links">
+            <li><a class="social-links__link" href="#" aria-label="Вконтакте"></a></li>
+            <li><a class="social-links__link" href="#" aria-label="Инстаграм"></a></li>
+            <li><a class="social-links__link" href="#" aria-label="Фейсбук"></a></li>
+          </ul>
+          <div class="copyright">
+            <span class="copyright__text">HTML Academy</span>
+            <a class="copyright__logo" href="#" aria-label="На страницу HTML Academy">
+              <img src="#" alt="Логотип HTML Academy">
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

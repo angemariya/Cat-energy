@@ -1,0 +1,10 @@
+.container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-height: $tablet-width) {
+  .container-flex {
+    flex-direction: row;
+  }
+}
