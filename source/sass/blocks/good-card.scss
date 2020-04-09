@@ -2,8 +2,10 @@
   padding: 20px 24px;
   border: 1px solid $inside;
   border-bottom: none;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .good-card {
     background-color: $grey;
     box-sizing: border-box;
     border: none;
@@ -12,8 +14,10 @@
     min-width: 324px;
     margin-bottom: 140px;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .good-card {
     min-width: 245px;
     display: flex;
     flex-direction: column;
@@ -30,8 +34,10 @@
   margin: 0;
   width: 75px;
   margin-bottom: 18px;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .good-card__title {
     display: block;
     margin: 0 auto;
     margin-bottom: 28px;
@@ -46,8 +52,10 @@
   text-align: center;
 
   @include text (none, 12px);
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .good-card__text {
     font-size: 16px;
     width: 165px;
   }
@@ -60,25 +68,33 @@
   &--grey {
     flex-direction: column;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .good-card__wrapper {
     flex-direction: column;
     align-items: center;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .good-card__wrapper {
     width: 100%;
   }
 }
 
 .good-card__wrapper-sm {
   width: 100%;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .good-card__wrapper-sm {
     align-items: center;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .good-card__wrapper-sm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,15 +123,17 @@
   @include text(none, 12px);
   display: flex;
   justify-content: space-between;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .good-card__row {
     font-size: 16px;
     margin-bottom: 20px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .good-card__row {
-      width: 169px;
-    }
+@media (min-width: $desktop-width) {
+  .good-card__row {
+    width: 169px;
   }
 }
