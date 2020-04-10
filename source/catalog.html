@@ -2,170 +2,200 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кэт энерджи Каталог</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <a class= "nav-logo" href="#">
-          <img class="nav-logo__image" src="#" width="191" height="39" alt="Логотип Кэт энерджи">
-        </a>
-        <button class="nav-toggle" type="button"><span></span></button>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav-wrapper">
+          <a class= "nav-logo" href="#">
+            <img class="nav-logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
+          </a>
+          <button class="nav-toggle" type="button"><span></span></button>
+        </div>
         <ul class="nav-list">
-          <li class="nav-list__item"><a href="index.html">Главная</a></li>
-          <li class="nav-list__item nav-list__item--active">Каталог продукции</li>
-          <li class="nav-list__item"><a href="form.html">Подбор программы</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="index.html">Главная</a></li>
+          <li class="nav-list__item nav-list__item--active nav-list__item--underline"><a class="nav-list__link">Каталог продукции</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
-    <main class="catalog-page">
+    <main class="catalog-page container">
       <h1 class="page-title">Каталог продукции</h1>
       <section class="goods-main">
         <ul class="goods-main-list">
-
           <li class="good-card">
-            <img class="good-card__image" src="#" alt="Cat Energy Курица 500 грамм" width="140" height="144">
-            <h3 class="good-card__title">Cat Energy PRO 500 г</h3>
-            <table class="good-card__description">
-              <tr>
-                <td>Объем</td>
-                <td>500 г</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Курица</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р.</td>
-              </tr>
-            </table>
-            <a class="good-card__link card-button" href="#">Заказать</a>
-          </li>
-
-          <li class="good-card">
-            <img class="good-card__image" src="#" alt="Cat Energy Курица 1000 грамм" width="140" height="144">
-            <h3 class="good-card__title" >Cat Energy PRO 1000 г</h3>
-            <table class="good-card__description">
-              <tr>
-                <td>Объем</td>
-                <td>1000 г</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Курица</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>1000 Р.</td>
-              </tr>
-            </table>
-            <a class="good-card__link card-button" href="">Заказать</a>
-          </li>
-
-          <li class="good-card">
-            <img class="good-card__image" src="#" alt="Cat Energy Рыба 500 грамм" width="140" height="144">
-            <h3 class="good-card__title">Cat Energy PRO 500 г</h3>
-            <table class="good-card__description">
-              <tr>
-                <td>Объем</td>
-                <td>500 г</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Рыба</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р.</td>
-              </tr>
-            </table>
-            <a class="good-card__link card-button" href="#">Заказать</a>
-          </li>
-
-          <li class="good-card">
-            <img class="good-card__image" src="#" alt="Cat Energy Рыба 1000 грамм" width="140" height="144">
-            <h3 class="good-card__title" >Cat Energy PRO 1000 г</h3>
-            <table class="good-card__description">
-              <tr>
-                <td>Объем</td>
-                <td>1000 г</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Рыба</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>1000 Р.</td>
-              </tr>
-            </table>
-            <a class="good-card__link card-button" href="#">Заказать</a>
-          </li>
-
-          <li class="good-card">
-            <img class="good-card__image" src="#" alt="Cat Energy Гречка 500 грамм" width="140" height="144">
-            <h3 class="good-card__title" >Cat Energy SLIM 500 г</h3>
-            <table class="good-card__description">
-              <tr>
-                <td>Объем</td>
-                <td>500 г</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Гречка</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>400 Р.</td>
-              </tr>
-            </table>
-            <a class="good-card__link card-button" href="#">Заказать</a>
-          </li>
-
-          <li class="good-card">
-            <img class="good-card__image" src="#" alt="Cat Energy Гречка 1000 грамм" width="140" height="144">
-            <h3 class="good-card__title">Cat Energy SLIM 1000 г</h3>
-            <table class="good-card__description">
-              <tr>
-                <td>Объем</td>
-                <td>1000 г</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Гречка</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р.</td>
-              </tr>
-            </table>
-            <a class="good-card__link card-button" href="#">Заказать</a>
-          </li>
-
-          <li class="good-card">
-            <img class="good-card__image" src="#" alt="Cat Energy Рис 500 грамм" width="140" height="144">
-            <h3 class="good-card__title">Cat Energy SLIM 500 г</h3>
-            <table class="good-card__description">
-              <tr>
-                <td>Объем</td>
-                <td>500 г</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Рис</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>500 Р.</td>
-              </tr>
-            </table>
+            <div class="good-card__wrapper">
+              <img class="good-card__image" src="#" alt="Cat Energy Курица 500 грамм" width="140" height="144">
+              <div class="good-card__wrapper-sm">
+                <h3 class="good-card__title">Cat Energy PRO 500 г</h3>
+                <table class="good-card__description">
+                  <tr class="good-card__row">
+                    <td>Объем</td>
+                    <td>500 г</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td>Вкус</td>
+                    <td>Курица</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td>Цена</td>
+                    <td>700 Р.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
             <a class="good-card__link card-button" href="#">Заказать</a>
           </li>
 
           <li class="good-card">
             <div class="good-card__wrapper">
+              <img class="good-card__image" src="#" alt="Cat Energy Курица 1000 грамм" width="140" height="144">
+              <div class="good-card__wrapper-sm">
+                <h3 class="good-card__title" >Cat Energy PRO 1000 г</h3>
+                <table class="good-card__description">
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Объем</td>
+                    <td class="good-card__element">1000 г</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Вкус</td>
+                    <td  class="good-card__element">Курица</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Цена</td>
+                    <td class="good-card__element">1000 Р.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <a class="good-card__link card-button" href="">Заказать</a>
+          </li>
+
+          <li class="good-card">
+            <div class="good-card__wrapper">
+              <img class="good-card__image" src="#" alt="Cat Energy Рыба 500 грамм" width="140" height="144">
+              <div class="good-card__wrapper-sm">
+                <h3 class="good-card__title">Cat Energy PRO 500 г</h3>
+                <table class="good-card__description">
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Объем</td>
+                    <td class="good-card__element">500 г</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Вкус</td>
+                    <td class="good-card__element">Рыба</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Цена</td>
+                    <td class="good-card__element">700 Р.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <a class="good-card__link card-button" href="#">Заказать</a>
+          </li>
+
+          <li class="good-card">
+            <div class="good-card__wrapper">
+              <img class="good-card__image" src="#" alt="Cat Energy Рыба 1000 грамм" width="140" height="144">
+              <div class="good-card__wrapper-sm">
+                <h3 class="good-card__title" >Cat Energy PRO 1000 г</h3>
+                <table class="good-card__description">
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Объем</td>
+                    <td class="good-card__element">1000 г</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Вкус</td>
+                    <td class="good-card__element">Рыба</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Цена</td>
+                    <td class="good-card__element">1000 Р.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <a class="good-card__link card-button" href="#">Заказать</a>
+          </li>
+
+          <li class="good-card">
+            <div class="good-card__wrapper">
+              <img class="good-card__image" src="#" alt="Cat Energy Гречка 500 грамм" width="140" height="144">
+              <div class="good-card__wraper-sm">
+                <h3 class="good-card__title" >Cat Energy SLIM 500 г</h3>
+                <table class="good-card__description">
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Объем</td>
+                    <td class="good-card__element">500 г</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Вкус</td>
+                    <td class="good-card__element">Гречка</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Цена</td>
+                    <td class="good-card__element">400 Р.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <a class="good-card__link card-button" href="#">Заказать</a>
+          </li>
+
+          <li class="good-card">
+            <div class="good-card__wrapper">
+              <img class="good-card__image" src="#" alt="Cat Energy Гречка 1000 грамм" width="140" height="144">
+              <div class="good-card__wrapper-sm">
+                <h3 class="good-card__title">Cat Energy SLIM 1000 г</h3>
+                <table class="good-card__description">
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Объем</td>
+                    <td class="good-card__element">1000 г</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Вкус</td>
+                    <td class="good-card__element">Гречка</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Цена</td>
+                    <td class="good-card__element">700 Р.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <a class="good-card__link card-button" href="#">Заказать</a>
+          </li>
+
+          <li class="good-card">
+            <div class="good-card__wrapper">
+              <img class="good-card__image" src="#" alt="Cat Energy Рис 500 грамм" width="140" height="144">
+              <div class="good-card__wrapper-sm">
+                <h3 class="good-card__title">Cat Energy SLIM 500 г</h3>
+                <table class="good-card__description">
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Объем</td>
+                    <td class="good-card__element">500 г</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Вкус</td>
+                    <td class="good-card__element">Рис</td>
+                  </tr>
+                  <tr class="good-card__row">
+                    <td class="good-card__element">Цена</td>
+                    <td class="good-card__element">500 Р.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <a class="good-card__link card-button" href="#">Заказать</a>
+          </li>
+
+          <li class="good-card white-card">
+            <div class="good-card__wrapper good-card__wrapper--grey">
               <h3 class="good-card__title good-card__title--center">Показать еще 100500 товаров</h3>
               <p class="good-card__text">На самом деле вкусов гораздо больше!</p>
               <a class="good-card__link card-button card-button--grey" href="#">Показать все</a>
@@ -235,19 +265,23 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo-text" href="#" aria-label="На главную страницу">
-        <img src="#" alt="Логотип Cat Energy" width="128" height="24">
-      </a>
-      <ul class="social-links">
-        <li><a class="social-links__link" href="#" aria-label="Вконтакте"></a></li>
-        <li><a class="social-links__link" href="#" aria-label="Инстаграм"></a></li>
-        <li><a class="social-links__link" href="#" aria-label="Фейсбук"></a></li>
-      </ul>
-      <div class="copyright">
-        <span class="copyright__text">HTML Academy</span>
-        <a class="copyright__logo" href="#" aria-label="На страницу HTML Academy">
-          <img src="#" alt="Логотип HTML Academy">
-        </a>
+      <div class="container">
+        <div class="footer__wrapper">
+          <a class="logo-text" href="#" aria-label="На главную страницу">
+            <img src="#" alt="Логотип Cat Energy" width="128" height="24">
+          </a>
+          <ul class="social-links">
+            <li><a class="social-links__link" href="#" aria-label="Вконтакте"></a></li>
+            <li><a class="social-links__link" href="#" aria-label="Инстаграм"></a></li>
+            <li><a class="social-links__link" href="#" aria-label="Фейсбук"></a></li>
+          </ul>
+          <div class="copyright">
+            <span class="copyright__text">HTML Academy</span>
+            <a class="copyright__logo" href="#" aria-label="На страницу HTML Academy">
+              <img src="#" alt="Логотип HTML Academy">
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

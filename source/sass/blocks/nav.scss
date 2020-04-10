@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,40 @@
+.nav-toggle {
+  border: none;
+  background-color: transparent;
+  width: auto;
+  cursor: pointer;
+}
+
+.nav-toggle__hamburger {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: $black-brown;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $black-brown;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $black-brown;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav-toggle {
+    display: none;
+  }
+}

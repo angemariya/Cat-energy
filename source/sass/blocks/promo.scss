@@ -1,9 +1,13 @@
 .promo {
-  background-color: $green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  width: 320px;
-  height: 305px;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 305px, transparent 305px);
+  background-repeat: no-repeat, repeat;
+  background-position: center top, left top;
+}
+
+.promo__wrapper {
+  padding-top: 29px;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__header {
@@ -11,15 +15,25 @@
   font-size: 36px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  margin-bottom: 19px;
 }
 
 .promo__text {
   display: block;
   color: white;
   text-align: center;
+  margin: 0;
 
   @include text (uppercase, 14px);
   margin-bottom: 23px;
+}
+
+.promo__image {
+  background-image: url("../../img/index-can-mobile@1x.png");
+  width: 280px;
+  height: 270px;
+  background-position: center;
 }
 
 .promo__button {
@@ -30,6 +44,84 @@
   height: 40px;
   text-align: center;
   padding-top: 14px;
+  margin: 0 auto;
 
   @include text (uppercase, 14px);
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: none;
+  }
+
+  .promo__wrapper {
+    padding-top: 0;
+    width: 420px;
+    margin-bottom: 42px;
+  }
+
+  .promo__header {
+    color: $black-title;
+    text-align: left;
+
+    @include text (none, 60px);
+    margin-bottom: 33px;
+  }
+
+  .promo__text {
+    color: $black-title;
+    text-align: left;
+    margin-bottom: 0;
+
+    @include text (uppercase, 20px);
+  }
+
+  .promo__button {
+    width: 245px;
+    height: 52px;
+    margin: 0;
+    margin-left: 100px;
+    padding: 16px 27px;
+    font-size: 20px;
+  }
+
+  .promo__image {
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    width: 709px;
+    height: 609px;
+    background-position: center;
+    order: 2;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 500px;
+    padding-bottom: 30px;
+  }
+
+  .promo__image {
+    display: none;
+  }
+
+  .promo__wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -50px;
+      left: 400px;
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-repeat: no-repeat;
+      width: 552px;
+      height: 499px;
+    }
+  }
+
+  .promo__button {
+    margin: 0;
+  }
 }

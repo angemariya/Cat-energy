@@ -1,0 +1,12 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 65px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-wrapper {
+    padding: 0;
+  }
+}
