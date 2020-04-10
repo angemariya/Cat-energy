@@ -2,14 +2,13 @@
   @include ul-reset ();
 }
 
-.preferences__item p {
-  line-height: 1.29;
+.preferences__text {
+  line-height: 24px;
   font-family: $font-a;
   color: $grey-text;
 
   @include text(none, 14px);
   margin: 0;
-  margin-bottom: 32px;
 }
 
 .preferences__header {
@@ -17,22 +16,84 @@
   margin-bottom: 35px;
 }
 
+.preferences__item {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .preferences {
-    padding-top: 50px;
-    margin-bottom: 61px;
-    text-align: left;
+    padding-top: 51px;
   }
 
-  .preferences__item p {
+  .preferences__text {
     font-size: 16px;
     text-align: left;
-    width: 240px;
   }
 
   .preferences__item {
-    width: 393px;
+    width: 245px;
+    padding-right: 50px;
     padding-top: 117px;
+    padding-bottom: 48px;
+    margin-right: 100px;
+
+
+    &--healthy {
+      position: relative;
+
+      &::after {
+        content: "1";
+        position: absolute;
+        font-size: 281px;
+        color: $grey;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+      }
+    }
+
+    &--powdery {
+      position: relative;
+      width: 220px;
+
+      &::after {
+        content: "2";
+        position: absolute;
+        font-size: 281px;
+        color: $grey;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+      }
+    }
+
+    &--dietary {
+      position: relative;
+
+      &::after {
+        content: "3";
+        position: absolute;
+        font-size: 281px;
+        color: $grey;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+      }
+    }
+
+    &--quickly {
+      position: relative;
+
+      &::after {
+        content: "4";
+        position: absolute;
+        font-size: 281px;
+        color: $grey;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+      }
+    }
   }
 
   .preferences__list {
@@ -53,6 +114,6 @@
   }
 
   .preferences__item {
-    width: 245px;
+    margin-right: 60px;
   }
 }

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="container">
-      <nav class="nav top-block">
+    <header class="header header--background">
+      <nav class="nav container">
         <div class="nav-wrapper">
           <a class= "nav-logo" href="#">
             <img class="nav-logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
@@ -16,21 +16,23 @@
           <button class="nav-toggle" type="button"><span class="nav-toggle__hamburger" aria-label="Меню"></span></button>
         </div>
         <ul class="nav-list">
-          <li class="nav-list__item nav-list__item--active"><a class="nav-list__link">Главная</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">Каталог продукции</a> </li>
-          <li class="nav-list__item"><a class="nav-list__link" href="form.html">Подбор программы</a></li>
+          <li class="nav-list__item nav-list__item--active"><a class="nav-list__link text-white">Главная</a></li>
+          <li class="nav-list__item"><a class="nav-list__link text-white" href="catalog.html">Каталог продукции</a> </li>
+          <li class="nav-list__item"><a class="nav-list__link text-white" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
+      <section class="promo">
+        <div class="container">
+          <div class="promo__wrapper">
+            <h1 class="promo__header">Функциональное питание для котов</h1>
+            <p class="promo__text">Занялся собой? Займись котом!</p>
+          </div>
+          <img class="promo__image" aria-label="Банка питания Кэт Энерджи-Курица" width="280" height="270">
+          <a class="promo__button" href="#">Подобрать программу</a>
+        </div>
+      </section>
     </header>
     <main>
-      <section class="promo container">
-        <div class="promo__wrapper">
-          <h1 class="promo__header">Функциональное питание для котов</h1>
-          <p class="promo__text">Занялся собой? Займись котом!</p>
-        </div>
-        <img class="promo__image" aria-label="Банка питания Кэт Энерджи-Курица" width="280" height="270">
-        <a class="promo__button" href="#">Подобрать программу</a>
-      </section>
       <section class="programs container">
         <div class="program">
           <h3 class="program__header">Похудение</h3>
@@ -48,16 +50,16 @@
         <h2 class="preferences__header section-header">Как это работает</h2>
         <ul class="preferences__list">
           <li class="preferences__item preferences__item--healthy">
-            <p>Функциональное питание содержит только полезные питательные вещества.</p>
+            <p class="preferences__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="preferences__item preferences__item--powdery">
-            <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <p class="preferences__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="preferences__item preferences__item--dietary">
-            <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <p class="preferences__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="preferences__item preferences__item--quickly">
-            <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="preferences__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
       </section>

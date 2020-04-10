@@ -1,6 +1,19 @@
 @media (min-width: $desktop-width) {
   .header {
-    margin: 0 auto;
-    padding: 0 110px;
+    &--background {
+      background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, transparent 50%, #64a83b 50%);
+      background-repeat: no-repeat, repeat;
+      background-position: left calc(50% + 360px) top, left top;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    &--background {
+      background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, transparent 50%, #64a83b 50%);
+      background-repeat: no-repeat, repeat;
+      background-position: right  top, left top;
+    }
   }
 }

@@ -1,33 +1,13 @@
 .promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(#64a83b);
-    height: 305px;
-    width: 100%;
-    z-index: -2;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    height: 305px;
-    width: 320px;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 305px, transparent 305px);
+  background-repeat: no-repeat, repeat;
+  background-position: center top, left top;
 }
 
 .promo__wrapper {
   padding-top: 29px;
   display: flex;
   flex-direction: column;
-  z-index: -1;
 }
 
 .promo__header {
@@ -71,26 +51,13 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    align-items: flex-start;
-
-    &::before,
-    &::after {
-      display: none;
-    }
+    background-image: none;
   }
 
   .promo__wrapper {
-    background-image: none;
-    background-color: white;
-    margin-left: 100px;
-    margin-bottom: 48px;
     padding-top: 0;
-    min-height: 178px;
     width: 420px;
-
-    &::before {
-      display: none;
-    }
+    margin-bottom: 42px;
   }
 
   .promo__header {
@@ -130,31 +97,8 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    margin-bottom: 268px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-position: top right;
-      background-repeat: no-repeat;
-      height: 696px;
-      width: 100%;
-      z-index: -1;
-    }
-
-    &::after {
-      display: block;
-      content: "";
-      position: absolute;
-      background-image: linear-gradient(to right, transparent 50%, #64a83b 50%);
-      background-position: 100%;
-      background-repeat: no-repeat;
-      height: 696px;
-      width: 100%;
-      z-index: -2;
-    }
+    min-height: 500px;
+    padding-bottom: 30px;
   }
 
   .promo__image {
@@ -162,8 +106,6 @@
   }
 
   .promo__wrapper {
-    margin-top: 227px;
-    margin-left: 150px;
     position: relative;
 
     &::before {
@@ -180,6 +122,6 @@
   }
 
   .promo__button {
-    margin-left: 150px;
+    margin: 0;
   }
 }
