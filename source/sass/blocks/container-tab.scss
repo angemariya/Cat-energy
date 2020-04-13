@@ -1,3 +1,9 @@
+.container-tab {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .container-tab {
     width: 630px;
@@ -10,5 +16,6 @@
   .container-tab {
     width: $desktop-width;
     padding: 0 40px;
+    padding-right: 0;
   }
 }

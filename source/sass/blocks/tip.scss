@@ -9,3 +9,9 @@
   margin-top: 23px;
   margin-bottom: 30px;
 }
+
+@media (min-width: $desktop-width) {
+  .tip {
+    margin-left: 82px;
+  }
+}

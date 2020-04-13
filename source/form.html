@@ -25,76 +25,82 @@
     <main>
       <div class="container">
         <h1 class="page-title page-title--catalog">Подбор программы</h1>
-        <div class="container-tab">
-          <p class="page-descr">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        </div>
+        <p class="page-descr">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
       </div>
       <section>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__wrapper">
-            <fieldset class="form__fieldset">
-              <div class="container container-tab">
-                <div class="form__fieldset-container">
-                  <label class="form__label form__label--text" for="name">Имя:*</label>
-                  <input class="form__control form__control--text" type="text" id="name" name="name" placeholder="Барсик" required>
-                </div>
-                <div class="form__fieldset-container">
-                  <label class="form__label form__label--text" for="weight">Вес (кг):*</label>
-                  <input class="form__control form__control--text" type="text" id="weight" name="weight" placeholder="7" required>
-                </div>
-                <div class="form__fieldset-container">
-                  <label class="form__label form__label--text" for="age">Возраст (лет):</label>
-                  <input class="form__control form__control--text" type="text" id="age" name="age" placeholder="7">
-                </div>
+          <div class="form__wrapper container-tab">
+            <fieldset class="form__fieldset form__fieldset--name">
+              <div class="form__fieldset-container">
+                <label class="form__label form__label--text" for="name">Имя:*</label>
+                <input class="form__control form__control--text" type="text" id="name" name="name" placeholder="Барсик" required>
+              </div>
+              <div class="form__fieldset-container">
+                <label class="form__label form__label--text" for="weight">Вес (кг):*</label>
+                <input class="form__control form__control--text" type="text" id="weight" name="weight" placeholder="7" required>
+              </div>
+              <div class="form__fieldset-container">
+                <label class="form__label form__label--text" for="age">Возраст (лет):</label>
+                <input class="form__control form__control--text" type="text" id="age" name="age" placeholder="7">
               </div>
             </fieldset>
-            <fieldset class="form__fieldset">
-              <div class="container container-tab">
-                <div class="form__radio-container">
-                  <label class="form__label form__label--radio">
-                    <input class="form__control form__control--radio" type="radio" name="weight" value="weight-loss" checked>
-                    Похудение
-                  </label>
-                  <label class="form__label form__label--radio">
-                    <input class="form__control form__control--radio" type="radio" name="weight" value="weight-gain">
-                    Набор массы
-                  </label>
-                  <label class="form__label form__label--radio">
-                    <input class="form__control form__control--radio" type="radio" name="weight" value="need-advice">
-                    Не знаю (нужен ваш совет)
-                  </label>
-                </div>
+            <fieldset class="form__fieldset form__fieldset--radio">
+              <div class="form__radio-container">
+                <label class="form__label form__label--radio">
+                  <input class="form__control form__control--radio" type="radio" name="weight" value="weight-loss" checked>
+                  Похудение
+                </label>
+                <label class="form__label form__label--radio">
+                  <input class="form__control form__control--radio" type="radio" name="weight" value="weight-gain">
+                  Набор массы
+                </label>
+                <label class="form__label form__label--radio">
+                  <input class="form__control form__control--radio" type="radio" name="weight" value="need-advice">
+                  Не знаю (нужен ваш совет)
+                </label>
               </div>
             </fieldset>
           </div>
 
           <fieldset class="form__fieldset">
-            <div class="form__green-line"></div>
-            <div class="container container-tab">
-              <legend class="form__title form__title--contact">Контактные данные (владельца кота)</legend>
-              <div class="form__fieldset-container">
-                <label class="form__label form__label--email" for="email">E-mail:*</label>
-                <input class="form__control" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
+            <div class="form__green-line">
+              <div class="container container-tab">
+                <h3 class="form__title form__title--contact">Контактные данные (владельца кота)</h3>
               </div>
-              <div class="form__fieldset-container">
-                <label class="form__label form__label--phone" for="phone">Телефон:*</label>
-                <input class="form__control" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
+            </div>
+            <div class="container container-tab">
+              <div class="form__wrapper-contact">
+                <div class="form__fieldset-container form__fieldset-container--email">
+                  <label class="form__label form__label--email" for="email">E-mail:*</label>
+                  <input class="form__control form__control--text" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
+                </div>
+                <div class="form__fieldset-container form__fieldset-container--email">
+                  <label class="form__label form__label--phone" for="phone">Телефон:*</label>
+                  <input class="form__control form__control--text" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
+                </div>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset">
-          <div class="form__green-line"></div>
+            <div class="form__green-line">
+              <div class="container container-tab">
+                <h3 class="form__title form__title--textarea">Комментарий</h3>
+              </div>
+            </div>
             <div class="container container-tab">
-              <legend class="form__title form__title--textarea">Комментарий</legend>
               <textarea class="form__control form__control--textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <div class="form__green-line"></div>
+            <div class="form__green-line">
+              <div class="container container-tab">
+                <h3 class="form__title form__title--checkbox">Дополнительно</h3>
+              </div>
+            </div>
             <div class="container container-tab">
-              <legend class="form__title form__title--checkbox">Дополнительно</legend>
               <div class="form__checkboxs-list">
                 <div class="form__fieldset-container form__fieldset-container--checkbox">
                   <input class="form__control form__control--checkbox" type="checkbox" id="sweetener" name="sweetener" checked>

@@ -40,3 +40,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .card-button {
+    &--form {
+      width: 568px;
+      height: 52px;
+      font-size: 20px;
+      padding: 17px 208px;
+    }
+  }
+}

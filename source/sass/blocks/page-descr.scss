@@ -8,6 +8,13 @@
 @media (min-width: $tablet-width) {
   .page-descr {
     font-size: 20px;
-    width: 350px;
+    width: 370px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-descr {
+    padding-left: 0;
   }
 }

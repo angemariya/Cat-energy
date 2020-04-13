@@ -7,6 +7,8 @@
 
   @include text (none, 24px);
   font-weight: normal;
+  padding-left: 40px;
+  margin-left: -40px;
 }
 
 .goods-additional__list {
@@ -25,8 +27,9 @@
   .goods-additional__title {
     font-size: 36px;
     line-height: 1;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: fit-content;
+    padding-left: 10px;
+    margin-left: -10px;
   }
 
   .goods-additional__green-line {
