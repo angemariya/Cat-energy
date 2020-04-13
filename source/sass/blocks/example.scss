@@ -1,5 +1,6 @@
 .example {
   background-color: $grey;
+  padding: 20px 0;
 }
 
 .example__text {
@@ -11,23 +12,28 @@
   color: $grey-text;
 }
 
-.example__table td {
+.example__data {
   width: 124px;
   padding-top: 17px;
   padding-bottom: 18px;
-}
 
-.example__table td:nth-child(1) {
   @include text (uppercase, 24px);
   color: $black-title;
   text-align: center;
   border: 1px solid $radio;
+  border-radius: 4px;
+  margin-bottom: -10px;
 }
 
-.example__table td:nth-child(2) {
+.example__data-desc {
   @include text (lowercase, 12px);
   font-family: $font-a;
   color: $grey-text;
+  padding: 0;
+  background-color: $grey;
+  border: 1px solid $grey;
+  width: 84px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -35,4 +41,79 @@
   @include text (uppercase, 14px);
   text-align: center;
   color: $black-title;
+}
+
+.example__table-wrap {
+  display: flex;
+}
+
+.example__col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-image: linear-gradient(to bottom, white 40%, $grey 40%, $grey 80%);
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__header {
+    margin-top: 50px;
+  }
+
+  .example__text {
+    font-size: 16px;
+  }
+
+  .example__stats {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__data {
+    width: 162px;
+    font-size: 30px;
+  }
+
+  .example__data-desc {
+    width: auto;
+    background-color: white;
+    border: none;
+    padding: 0 8px;
+  }
+
+  .example__calculate {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__text {
+    width: 430px;
+  }
+
+  .example__calculate {
+    text-align: left;
+  }
+
+  .example__wrapper-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .example__wrapper {
+    flex-direction: row;
+  }
+
+  .example__stats {
+    flex-direction: column;
+  }
 }

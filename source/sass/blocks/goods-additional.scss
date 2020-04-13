@@ -1,6 +1,9 @@
 .goods-additional__title {
   color: $black-title;
-  text-align-last: left;
+  text-align: left;
+  padding-right: 25px;
+  width: max-content;
+  background-color: white;
 
   @include text (none, 24px);
   font-weight: normal;
@@ -8,4 +11,37 @@
 
 .goods-additional__list {
   @include ul-reset;
+}
+
+.goods-additional__green-line {
+  width: 100%;
+  height: 3px;
+  margin-top: 42px;
+  margin-bottom: -42px;
+  background-image: linear-gradient(to right, white 50%, $green 50%);
+}
+
+@media (min-width: $tablet-width) {
+  .goods-additional__title {
+    font-size: 36px;
+    line-height: 1;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .goods-additional__green-line {
+    background-image: linear-gradient(to right, $green);
+    margin-bottom: -60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .good-additional__catalog-wrap {
+    display: flex;
+  }
+
+  .goods-additional__list {
+    flex-grow: 1;
+    margin-right: 80px;
+  }
 }

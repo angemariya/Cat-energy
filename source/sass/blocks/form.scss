@@ -2,6 +2,15 @@
   @include text (uppercase, 16px);
   text-align: left;
   color: $black-brown;
+  padding-right: 16px;
+
+  &--radio {
+    padding-bottom: 20px;
+  }
+
+  &--checkbox {
+    padding-left: 16px;
+  }
 }
 
 .form__control {
@@ -16,13 +25,96 @@
 
 .form__control::placeholder {
   color: $grey-text;
+  flex-grow: 1;
+
+  &--textarea {
+    width: 100%;
+    height: 150px;
+  }
+
+  &--checkbox {
+    flex-grow: 0;
+    padding-left: 15px;
+  }
 }
 
 .form__title {
   @include text (none, 24px);
   color: $black-title;
+  background-color: white;
+  margin-top: 31px;
+  padding-bottom: 30px;
+
+  &--contact {
+    width: 200px;
+  }
+
+  &--checkbox {
+    width: 160px;
+  }
 }
 
 .form__fieldset {
   border: none;
+  border-top: 1px solid $inside;
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.form__fieldset-container {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.form__radio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__green-line {
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(to right, white 50%, $green 50%);
+  margin-bottom: -50px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset {
+    border: none;
+  }
+
+  .form__radio-container {
+    border: 1px solid $inside;
+    padding: 25px;
+  }
+
+  .form__title {
+    width: auto;
+    font-size: 36px;
+  }
+
+  .form__checkboxs-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset-container {
+    &--checkbox {
+      width: 290px;
+    }
+  }
+
+  .form__button-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    display: flex;
+  }
 }

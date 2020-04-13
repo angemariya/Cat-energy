@@ -67,31 +67,54 @@
       <section class="example">
         <div class="container">
           <h2 class="example__header section-header">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__stats">
-            <table class="example__table">
-              <tr>
-                <td>5 кг</td>
-                <td>снижение веса</td>
-              </tr>
-              <tr>
-                <td>60 дней</td>
-                <td>затрачено времени</td>
-              </tr>
-            </table>
-            <p class="example__calculate">Затраты на питание: 15 000 руб.</p>
-          </div>
-
-          <div class="difference">
-            <img class="difference__img" src="#" alt="Различия в весе кота" width="311" height="232">
-            <button class="difference__btn" type="button">Было</button>
-            <div class="difference__range">
-              <div class="difference__scale">
-                <div class="difference__bar"></div>
+          <div class="example__wrapper">
+            <div class="example__wrapper-sm">
+              <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="example__stats">
+                <table class="example__table">
+                  <tbody class="example__table-wrap">
+                    <tr class="example__col">
+                      <td class="example__data">5 кг</td>
+                      <td class="example__data-desc">снижение веса</td>
+                    </tr>
+                    <tr class="example__col">
+                      <td class="example__data">60 дней</td>
+                      <td class="example__data-desc">затрачено времени</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="example__calculate">Затраты на питание: 15 000 руб.</p>
               </div>
-              <div class="difference__toggle"></div>
             </div>
-            <button class="difference__btn" type="button">Стало</button>
+            <div class="difference">
+              <div class="difference__wrapper-img">
+                <div class="difference__before-wrapper">
+                  <picture class="difference__before-img">
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                    <img class="difference__img" src="img/before-mobile@1x.png" alt="Кот до диеты">
+                  </picture>
+                </div>
+                <div class="difference__after-wrapper">
+                  <!--
+                  <picture class="difference__after-img">
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                    <img src="img/after-mobile@1x.png" alt="Кот после диеты">
+                  </picture>-->
+                </div>
+              </div>
+              <div class="difference__wrapper-btn">
+                <button class="difference__btn" type="button">Было</button>
+                <div class="difference__range">
+                  <div class="difference__scale">
+                    <div class="difference__bar"></div>
+                  </div>
+                  <div class="difference__toggle"></div>
+                </div>
+                <button class="difference__btn" type="button">Стало</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -102,9 +125,8 @@
             <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
             <p class="contact__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <div class="map-wrapper">
-            <img class="map-wrapper__img" src="#" alt="Расположение магазина на карте" width="320" height="400">
-          </div>
+        </div>
+        <div class="map-wrapper">
         </div>
       </section>
     </main>
@@ -112,17 +134,54 @@
       <div class="container">
         <div class="footer__wrapper">
           <a class="logo-text" href="#" aria-label="На главную страницу">
-            <img src="#" alt="Логотип Cat Energy" width="128" height="24">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.8 23.4" width="135" height="35" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  fill: #111111;
+                }
+              </style>
+              <g>
+                <path
+                  class="st0"
+                  d="M1.6,21.5c-1-1.3-1.6-3.2-1.6-5.6V7.6c0-2.5,0.5-4.4,1.5-5.7C2.6,0.6,4.3,0,6.8,0c2.4,0,4.1,0.6,5.1,1.7
+                c1,1.1,1.5,2.8,1.5,4.9v2H8.5V6.3c0-0.9-0.1-1.6-0.3-2S7.6,3.5,6.8,3.5c-0.7,0-1.2,0.2-1.4,0.7S5.1,5.5,5.1,6.4v10.7
+                c0,0.9,0.1,1.6,0.4,2.1c0.2,0.5,0.7,0.7,1.4,0.7c0.7,0,1.1-0.2,1.3-0.7c0.2-0.5,0.3-1.2,0.3-2.1v-2.4h4.9v2c0,2.1-0.5,3.8-1.5,5
+                c-1,1.2-2.7,1.8-5.1,1.8C4.4,23.4,2.6,22.8,1.6,21.5z"/>
+                <path class="st0" d="M19.3,0.3h5.7l4.2,22.8h-4.6l-0.8-4.8h-3.3l-0.8,4.8H15L19.3,0.3z M23.4,15.3l-1.2-8.9L21,15.3H23.4z"/>
+                <path class="st0" d="M32.7,4.1h-3.4V0.3h11.9v3.7h-3.4v19.1h-5.1V4.1z"/>
+                <path class="st0" d="M50.3,0.3h8.8v2.4h-5.7v7.5h4.6v2.3h-4.6v8.4h5.7v2.3h-8.9V0.3z"/>
+                <path class="st0" d="M61.7,0.3h2.2l6.5,15.1V0.3h2.6v22.8h-2L64.4,7.5v15.6h-2.7V0.3z"/>
+                <path class="st0" d="M76,0.3h8.8v2.4h-5.7v7.5h4.6v2.3h-4.6v8.4h5.7v2.3H76V0.3z"/>
+                <path
+                  class="st0"
+                  d="M87.4,0.3H92c2.3,0,4,0.5,5.1,1.4c1.1,0.9,1.6,2.5,1.6,4.6c0,2.9-0.9,4.7-2.8,5.3l3.2,11.4H96l-3-10.7h-2.5
+                v10.7h-3.2V0.3z M91.8,10.1c1.4,0,2.3-0.3,2.9-0.8c0.6-0.5,0.9-1.5,0.9-3c0-0.9-0.1-1.7-0.3-2.2c-0.2-0.5-0.6-0.9-1.1-1.2
+                c-0.5-0.3-1.3-0.4-2.2-0.4h-1.4v7.5H91.8z"/>
+                <path
+                  class="st0"
+                  d="M102.7,21.4c-0.9-1.3-1.4-3.2-1.4-5.8V8c0-1.8,0.2-3.2,0.5-4.3c0.4-1.1,1-2,1.9-2.6s2.1-0.9,3.7-0.9
+                c2.1,0,3.6,0.5,4.5,1.6s1.4,2.7,1.4,5v0.8h-3V6.9c0-1.1-0.1-1.9-0.2-2.5c-0.1-0.6-0.4-1-0.8-1.3c-0.4-0.3-1-0.5-1.9-0.5
+                c-0.9,0-1.5,0.2-2,0.6s-0.7,0.9-0.8,1.6s-0.2,1.6-0.2,2.7V16c0,1.7,0.2,3,0.6,3.8c0.4,0.8,1.2,1.1,2.4,1.1c1.2,0,2-0.4,2.4-1.2
+                c0.4-0.8,0.7-2.1,0.7-4v-1.6h-2.9v-2.3h5.8v11.3h-2l-0.3-2.6c-0.7,1.9-2.1,2.9-4.1,2.9C105.1,23.4,103.6,22.7,102.7,21.4z"/>
+                <path class="st0" d="M119.8,15.1l-4.9-14.7h3l3.5,11l3.4-11h3l-4.9,14.7v8h-3V15.1z"/>
+              </g>
+            </svg>
           </a>
           <ul class="social-links">
-            <li><a class="social-links__link" href="#" aria-label="Вконтакте"></a></li>
-            <li><a class="social-links__link" href="#" aria-label="Инстаграм"></a></li>
-            <li><a class="social-links__link" href="#" aria-label="Фейсбук"></a></li>
+            <li>
+              <a class="social-links__link social-links__link--vk" href="#" aria-label="Вконтакте"></a>
+            </li>
+            <li>
+              <a class="social-links__link social-links__link--insta" href="#" aria-label="Инстаграм"></a>
+            </li>
+            <li>
+              <a class="social-links__link social-links__link--fb" href="#" aria-label="Фейсбук"></a>
+              </li>
           </ul>
           <div class="copyright">
             <span class="copyright__text">HTML Academy</span>
             <a class="copyright__logo" href="#" aria-label="На страницу HTML Academy">
-              <img src="#" alt="Логотип HTML Academy">
+              <svg class="coryright__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="30" height="36"><path fill="$gray-logo" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
             </a>
           </div>
         </div>

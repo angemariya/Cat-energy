@@ -1,11 +1,67 @@
+.contact {
+  background-color: $grey;
+}
+
 .contact__title {
   @include text (uppercase, 16px);
   color: $black-title;
   text-align: left;
+  line-height: 21px;
+  margin: 0;
 }
 
 .contact__descr {
   @include text (none, 14px);
   font-family: $font-a;
   color: $grey-text;
+  line-height: 21px;
+  margin: 0;
+}
+
+.contact__address {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .contact {
+    background-color: white;
+  }
+
+  .contact__address {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 72px;
+    padding-right: 72px;
+    justify-content: space-between;
+  }
+
+  .contact__title {
+    width: 155px;
+  }
+
+  .contact__descr {
+    width: 155px;
+    text-align: right;
+
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact {
+    position: relative;
+  }
+
+  .contact__address {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    left: 200px;
+    top: 100px;
+    background-color: $grey;
+  }
 }

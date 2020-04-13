@@ -2,4 +2,12 @@
   @include text (uppercase, 14px);
   text-align: left;
   color: $black-title;
+  line-height: 1.5;
+}
+
+@media (min-width: $tablet-width) {
+  .page-descr {
+    font-size: 20px;
+    width: 350px;
+  }
 }

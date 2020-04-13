@@ -1,5 +1,8 @@
 .copyright {
-  min-height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .copyright__text {
