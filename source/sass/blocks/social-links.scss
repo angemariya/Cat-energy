@@ -1,6 +1,13 @@
 .social-links {
   @include ul-reset ();
-  border-bottom: 1px solid $inside; //временно
-  min-height: 62px;
-  outline: 1px solid yellow;
+  border-bottom: 1px solid $gray-bottom;
+  border-top: 1px solid $gray-bottom;
+  min-height: 62px; //временно
+}
+
+@media (min-width: $tablet-width) {
+  .social-links {
+    width: 150px;
+    height: 50px; //временно, просто оставила место для иконок
+  }
 }

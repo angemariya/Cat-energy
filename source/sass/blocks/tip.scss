@@ -1,6 +1,17 @@
 .tip {
+  display: block;
+
   @include text (none, 14px);
   font-family: $font-a;
   text-align: center;
   color: $grey-text;
+  margin: 0 auto;
+  margin-top: 23px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $desktop-width) {
+  .tip {
+    margin-left: 82px;
+  }
 }

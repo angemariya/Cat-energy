@@ -15,6 +15,10 @@
     color: $grey-text;
   }
 
+  &--form {
+    margin: 0 auto;
+  }
+
   @media (min-width: $tablet-width) {
     width: 250px;
   }
@@ -27,4 +31,23 @@
 .card-button[type="submit"] {
   border: none;
   padding-bottom: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .card-button {
+    &--form {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-button {
+    &--form {
+      width: 568px;
+      height: 52px;
+      font-size: 20px;
+      padding: 17px 208px;
+    }
+  }
 }

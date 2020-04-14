@@ -1,8 +1,11 @@
 .additional-item {
-  border-top: 1px solid $inside;
-  border-bottom: 1px solid $inside;
+  border-top: 1px solid $radio;
   padding-top: 14px;
   padding-bottom: 17px;
+
+  &:nth-last-of-type() {
+    border-bottom: 1px solid $radio;
+  }
 }
 
 .additional-item__text {
@@ -10,15 +13,49 @@
   text-align: left;
   color: $black-brown;
   margin: 0;
+  padding-bottom: 15px;
 }
 
-.additional-item__table tr {
+.additional-item__row {
   font-family: $font-a;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
   @include text (none, 14px);
   color: $grey-text;
 }
 
-.additional-item__table td:nth-child(2) {
+.additional-item__data:nth-child(2) {
   text-align: right;
+}
+
+.additional-item__wrapper {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.additional-item__table {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  // .additional-item {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  .additional-item__data:nth-child(1) {
+    margin-right: 50px;
+  }
+
+  .additional-item__wrapper-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .additional-item__button {
+    width: 100%;
+  }
 }

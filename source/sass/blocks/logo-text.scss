@@ -1,4 +1,10 @@
 .logo-text {
-  min-height: 94px;
-  border-bottom: 1px solid $inside; //временно
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-text {
+    margin: 0;
+  }
 }

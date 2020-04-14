@@ -2,7 +2,16 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   width: 280px;
-  height: 289px;
+  min-height: 289px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $green;
+  padding-top: 65px;
+  padding-bottom: 56px;
 }
 
 .gift__text {
@@ -11,4 +20,34 @@
   @include text (none, 16px);
   font-family: $font-a;
   line-height: 1.25;
+  text-align: center;
+  width: 160px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    width: 708px;
+    min-height: 200px;
+    flex-direction: row;
+    padding-left: 90px;
+    padding-right: 80px;
+    margin-top: 70px;
+    margin-bottom: 76px;
+  }
+
+  .gift__text {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    width: 245px;
+    min-height: 289px;
+    flex-direction: column;
+  }
 }

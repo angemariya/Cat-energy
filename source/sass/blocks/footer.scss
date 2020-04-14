@@ -11,5 +11,6 @@
 @media (min-width: $tablet-width) {
   .footer__wrapper {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
