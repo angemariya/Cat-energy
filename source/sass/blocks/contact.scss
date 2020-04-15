@@ -52,16 +52,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contact {
-    position: relative;
-  }
 
-  .contact__address {
-    position: absolute;
-    width: 570px;
-    height: 201px;
-    left: 200px;
-    top: 100px;
-    background-color: white;
-  }
+  // .contact__address {
+  //   position: absolute;
+  //   width: 570px;
+  //   height: 201px;
+  //   left: 200px;
+  //   top: 100px;
+  //   background-color: white;
+  // }
 }

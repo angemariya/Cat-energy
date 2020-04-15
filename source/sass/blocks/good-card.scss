@@ -65,6 +65,7 @@
 .good-card__row {
   font-family: $font-a;
   color: $grey-text;
+  padding-bottom: 2px;
 
   @include text(none, 12px);
   display: flex;
@@ -80,6 +81,10 @@
     width: 128px;
   }
 
+  .good-card__link {
+    margin: 0 auto;
+  }
+
   .good-card__text {
     font-size: 16px;
     width: 165px;
@@ -87,21 +92,14 @@
 
   .good-card__wrapper {
     flex-direction: column;
-    align-items: center;
   }
 
   .good-card {
     background-color: $grey;
-    box-sizing: border-box;
     border: none;
-    padding: 36px;
-    padding-top: 165px;
-    min-width: 324px;
-    margin-bottom: 140px;
-  }
-
-  .good-card__wrapper-sm {
-    align-items: center;
+    padding: 38px;
+    min-width: 245px;
+    margin-top: 140px;
   }
 
   .good-card__element:nth-child(1) {
@@ -118,6 +116,17 @@
     border-bottom: 2px solid $radio;
     padding-bottom: 5px;
   }
+
+  .good-card__image {
+    margin-left: -38px;
+    margin-right: -38px;
+    margin-top: -126px;
+
+
+    &--big {
+      margin-top: -160px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -127,6 +136,7 @@
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
+    padding: 20px;
   }
 
   .good-card__wrapper {

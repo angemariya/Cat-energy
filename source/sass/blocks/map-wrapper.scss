@@ -1,16 +1,24 @@
 .map-wrapper {
-  width: 100%;
-  height: 400px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 320px 400px;
   background-position: center center;
+  height: 400px;
+  width: 100%;
+}
+
+.map-wrapper__iframe {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .map-wrapper {
     background-image: url("../img/bg-map-tablet@1x.png");
     background-size: $tablet-width 400px;
+  }
+
+  .map-wrapper__iframe {
+    width: 100%;
   }
 }
 
