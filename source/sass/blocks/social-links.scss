@@ -9,16 +9,20 @@
 }
 
 .social-links__item {
-  margin-right: 10px;
+  margin-right: 20px;
+
+  &:nth-last-child() {
+    margin-right: 0;
+  }
 }
 
 .social-links__link {
-  padding-right: 12px;
+  padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .social-links {
     width: 150px;
-    height: 50px; //временно, просто оставила место для иконок
+    border: none;
   }
 }

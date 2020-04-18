@@ -1,6 +1,12 @@
 .example {
   background-color: $grey;
   padding: 20px 0;
+  padding-bottom: 39px;
+}
+
+.example__header {
+  margin-top: 10px;
+  margin-bottom: 36px;
 }
 
 .example__text {
@@ -10,6 +16,8 @@
   line-height: 1.29;
   text-align: left;
   color: $grey-text;
+  padding-right: 2px;
+  margin-bottom: 20px;
 }
 
 .example__data {
@@ -41,6 +49,7 @@
   @include text (uppercase, 14px);
   text-align: center;
   color: $black-title;
+  margin-top: 16px;
 }
 
 .example__table-wrap {
@@ -50,12 +59,25 @@
 .example__col {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    background-image: linear-gradient(to bottom, white 40%, $grey 40%, $grey 80%);
+    padding: 8px 0;
+    background-color: white;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      height: 462px;
+      width: 100%;
+      bottom: -25px;
+      left: 0;
+      background-image: linear-gradient(to left, #eaeaea 50%, #f2f2f2 50%);
+    }
   }
 
   .example__wrapper {
@@ -63,12 +85,23 @@
     flex-direction: column;
   }
 
+  .example__wrapper-sm {
+    margin-bottom: 80px;
+  }
+
   .example__header {
-    margin-top: 50px;
+    margin-top: 0;
+    margin-bottom: 49px;
   }
 
   .example__text {
     font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  .example__word-wrap {
+    white-space: nowrap;
   }
 
   .example__stats {
@@ -79,9 +112,16 @@
   .example__data {
     width: 162px;
     font-size: 30px;
+    padding-bottom: 25px;
   }
 
+  .example__col {
+    margin-right: 38px;
+  }
+
+
   .example__data-desc {
+    font-size: 14px;
     width: auto;
     background-color: white;
     border: none;
@@ -90,6 +130,9 @@
 
   .example__calculate {
     font-size: 20px;
+    width: 174px;
+    text-align: right;
+    line-height: 22px;
   }
 }
 

@@ -4,44 +4,92 @@
 
   @include text (uppercase, 16px);
   color: $black-title;
+  padding: 0 6px;
 }
 
 .difference__range {
-  width: 89px;
-  height: 16px;
-  border: 4px solid $radio;
-  border-radius: 4px;
+  width: 86px;
+  height: 15px;
+  border: 1px solid $radio;
+  border-radius: 8px;
+  padding: 3px 6px;
+  background-color: white;
 }
 
 .difference__scale {
   width: 37px;
   height: 7px;
   background-color: $green;
-  border: 1px solid $green;
   border-radius: 5px;
 }
 
 .difference__wrapper-btn {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin: 0 auto;
+  padding: 0 35px;
+}
+
+.difference__img {
+  max-width: none;
+}
+
+.difference__before-wrapper {
+  padding-top: 25px;
+  margin-bottom: 32px;
+}
+
+.difference__before-img {
+  margin-left: -20px;
+}
+
+.difference__after-img {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .difference {
+    position: relative;
+  }
+
   .difference__wrapper-img {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
+    position: relative;
   }
 
   .difference__before-wrapper {
-    width: 367px;
-    height: 500px;
+    position: absolute;
+    width: 319px;
+    height: 545px;
     overflow: hidden;
+    top: -27px;
+    right: 354px;
+    margin-bottom: 0;
+    z-index: 1;
+    background-image: linear-gradient(to top, #f2f2f2 349px, #ffffff 349px);
+  }
+
+  .difference__after-wrapper {
+    background-image: linear-gradient(to top, #eaeaea 349px, #ffffff 349px);
+  }
+
+  .difference__after-img {
+    display: block;
+    margin-left: 16px;
   }
 
   .difference__img {
     max-width: none;
+  }
+
+  .difference__wrapper-btn {
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    right: 58px;
   }
 
   .difference__btn {
@@ -58,8 +106,10 @@
   .difference__scale {
     width: 100%;
     position: relative;
-    background-color: $grey-scale;
+    background-color: transparent;
     border: none;
+    top: -2px;
+    left: 0;
   }
 
   .difference__bar {
@@ -71,5 +121,16 @@
     background-color: white;
     border-radius: 50%;
     position: absolute;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      border-radius: 50%;
+    }
   }
 }

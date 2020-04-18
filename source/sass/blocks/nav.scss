@@ -1,15 +1,15 @@
-@media (min-width: $tablet-width) {
-  .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+.nav {
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 768px;
+    padding: 13px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }

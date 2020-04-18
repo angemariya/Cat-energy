@@ -1,9 +1,13 @@
+.preferences {
+  margin-bottom: 40px;
+}
+
 .preferences__list {
   @include ul-reset ();
 }
 
 .preferences__text {
-  line-height: 24px;
+  line-height: 20px;
   font-family: $font-a;
   color: $grey-text;
 
@@ -12,13 +16,12 @@
 }
 
 .preferences__header {
-  margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .preferences__item {
-  margin-bottom: 30px;
-  padding-left: 85px;
+  margin-bottom: 20px;
+  padding-left: 80px;
   position: relative;
 
   &::before {
@@ -27,70 +30,40 @@
     width: 60px;
     height: 60px;
     background-color: $green;
-    top: 5px;
-    left: 5px;
+    background-size: 50px 50px;
+    background-position: center;
+    top: 0;
+    left: 0;
   }
 
   &--healthy {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 50px;
+    &::before {
       background-image: url("../img/advantage-leaf@1x.png");
-      top: 10px;
-      left: 10px;
     }
   }
 
   &--powdery {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 50px;
+    &::before {
       background-image: url("../img/advantage-powder@1x.png");
-      top: 10px;
-      left: 10px;
     }
   }
 
   &--dietary {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 50px;
+    &::before {
       background-image: url("../img/advantage-dining@1x.png");
-      top: 10px;
-      left: 10px;
     }
   }
 
   &--quickly {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 50px;
+    &::before {
       background-image: url("../img/advantage-clock@1x.png");
-      top: 10px;
-      left: 10px;
     }
   }
 }
-
+//                                                                                      Tablet view
 @media (min-width: $tablet-width) {
   .preferences {
-    padding-top: 51px;
+    border-bottom: 1px solid $inside;
   }
 
   .preferences__text {
@@ -100,66 +73,54 @@
 
   .preferences__item {
     width: 245px;
-    padding-right: 50px;
-    padding-top: 117px;
-    padding-bottom: 48px;
-    margin-right: 100px;
+    padding-top: 148px;
+    padding-left: 0;
+    margin-right: 140px;
+    margin-bottom: 104px;
 
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 34px;
+      left: 0;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      font-size: 281px;
+      color: $grey;
+      bottom: -61px;
+      background-image: none;
+      left: 46%;
+      z-index: -1;
+    }
 
     &--healthy {
-      position: relative;
-
       &::after {
         content: "1";
-        position: absolute;
-        font-size: 281px;
-        color: $grey;
-        bottom: 0;
-        left: 50%;
-        z-index: -1;
       }
     }
 
     &--powdery {
-      position: relative;
-      width: 220px;
-
       &::after {
         content: "2";
-        position: absolute;
-        font-size: 281px;
-        color: $grey;
-        bottom: 0;
-        left: 50%;
-        z-index: -1;
       }
     }
 
     &--dietary {
-      position: relative;
-
       &::after {
         content: "3";
-        position: absolute;
-        font-size: 281px;
-        color: $grey;
-        bottom: 0;
-        left: 50%;
-        z-index: -1;
       }
     }
 
     &--quickly {
-      position: relative;
-
       &::after {
         content: "4";
-        position: absolute;
-        font-size: 281px;
-        color: $grey;
-        bottom: 0;
-        left: 50%;
-        z-index: -1;
       }
     }
   }
@@ -167,6 +128,10 @@
   .preferences__list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .preferences__text {
+    line-height: 21px;
   }
 }
 

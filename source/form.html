@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Подбор программы</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url("img/cat-energy-form-mobile.png");
+      }
+      /* Tablet */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url("img/cat-energy-form-tablet.png");
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 1300px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url("img/cat-energy-form-desktop.png");
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+    <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="header">

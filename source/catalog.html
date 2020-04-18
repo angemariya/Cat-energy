@@ -5,13 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кэт энерджи Каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url("img/cat-energy-catalog-mobile.png");
+      }
+      /* Tablet */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url("img/cat-energy-catalog-tablet.png");
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 1300px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url("img/cat-energy-catalog-desktop.png");
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+    <script src="https://yoksel.github.io/pixel-glass-js/script.js" ></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="header">
       <nav class="nav container">
         <div class="nav-wrapper">
           <a class= "nav-logo" href="#">
-            <img class="nav-logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
+            <picture class="nav-logo__image">
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+            </picture>
           </a>
           <button class="nav-toggle" type="button"><span class="nav-toggle__hamburger" aria-label="Меню"></span></button>
         </div>
@@ -24,7 +54,7 @@
     </header>
     <main class="catalog-page">
       <div class="container">
-        <h1 class="page-title">Каталог продукции</h1>
+        <h1 class="page-title page-title--catalog">Каталог продукции</h1>
       </div>
       <section class="goods-main container">
         <ul class="goods-main-list">
