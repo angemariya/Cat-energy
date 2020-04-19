@@ -69,6 +69,7 @@
   .preferences__text {
     font-size: 16px;
     text-align: left;
+    line-height: 21px;
   }
 
   .preferences__item {
@@ -129,10 +130,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-  .preferences__text {
-    line-height: 21px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -147,6 +144,11 @@
   }
 
   .preferences__item {
-    margin-right: 60px;
+    margin-right: 0;
+  }
+
+  .preferences__header {
+    margin-top: 0;
+    margin-bottom: 32px;
   }
 }

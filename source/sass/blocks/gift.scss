@@ -11,7 +11,7 @@
   align-items: center;
   background-color: $green;
   padding-top: 65px;
-  padding-bottom: 56px;
+  padding-bottom: 43px;
 }
 
 .gift__text {
@@ -49,5 +49,11 @@
     width: 245px;
     min-height: 289px;
     flex-direction: column;
+  }
+
+  .gift__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
   }
 }

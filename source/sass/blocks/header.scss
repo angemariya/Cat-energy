@@ -1,6 +1,7 @@
 @media (min-width: $desktop-width) {
   .header {
     &--background {
+      min-height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, transparent 50%, #64a83b 50%);
       background-repeat: no-repeat, repeat;
       background-position: left calc(50% + 360px) top, left top;

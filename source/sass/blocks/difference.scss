@@ -68,7 +68,7 @@
     top: -27px;
     right: 354px;
     margin-bottom: 0;
-    z-index: 1;
+    z-index: 2;
     background-image: linear-gradient(to top, #f2f2f2 349px, #ffffff 349px);
   }
 
@@ -79,6 +79,8 @@
   .difference__after-img {
     display: block;
     margin-left: 16px;
+    position: relative;
+    z-index: 1;
   }
 
   .difference__img {

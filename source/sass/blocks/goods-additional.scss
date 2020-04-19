@@ -1,14 +1,16 @@
 .goods-additional__title {
   color: $black-title;
   text-align: left;
-  padding-right: 25px;
   width: max-content;
   background-color: white;
 
   @include text (none, 24px);
   font-weight: normal;
+  padding-right: 25px;
   padding-left: 40px;
   margin-left: -40px;
+  margin-top: 36px;
+  margin-bottom: 34px;
 }
 
 .goods-additional__list {
@@ -41,6 +43,7 @@
 @media (min-width: $desktop-width) {
   .good-additional__catalog-wrap {
     display: flex;
+    margin-top: 80px;
   }
 
   .goods-additional__list {

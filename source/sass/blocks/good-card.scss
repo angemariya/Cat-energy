@@ -1,5 +1,8 @@
 .good-card {
-  padding: 20px 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 16px;
+  padding-top: 26px;
   border: 1px solid $inside;
   border-bottom: none;
 
@@ -8,14 +11,13 @@
   }
 }
 
-
 .good-card__title {
   @include text(uppercase, 16px);
   font-weight: 400;
   color: $black-title;
   text-align: center;
   margin: 0;
-  width: 75px;
+  width: 77px;
   margin-bottom: 18px;
 
   &--center {
@@ -23,10 +25,17 @@
   }
 }
 
+.good-card__image {
+  max-width: none;
+  margin-top: -23px;
+}
+
 .good-card__text {
   font-family: $font-a;
   color: $black-title;
   text-align: center;
+  margin-bottom: 15px;
+  margin-top: 0;
 
   @include text (none, 12px);
 }
@@ -39,14 +48,14 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 55px;
+    padding-top: 63px;
 
     &::before {
       content: "";
       position: absolute;
       width: 34px;
       height: 34px;
-      top: 0;
+      top: 7px;
       background-image: url("../../img/icon-plus-mobile.svg");
       background-repeat: no-repeat;
     }
@@ -72,10 +81,11 @@
   justify-content: space-between;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {//             TABLET
   .good-card__title {
     display: block;
     margin: 0 auto;
+    margin-top: 49px;
     margin-bottom: 28px;
     font-size: 20px;
     width: 128px;
@@ -99,7 +109,7 @@
     border: none;
     padding: 38px;
     min-width: 245px;
-    margin-top: 140px;
+    margin-top: 158px;
   }
 
   .good-card__element:nth-child(1) {
@@ -112,7 +122,7 @@
 
   .good-card__row {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
     border-bottom: 2px solid $radio;
     padding-bottom: 5px;
   }
@@ -120,7 +130,7 @@
   .good-card__image {
     margin-left: -38px;
     margin-right: -38px;
-    margin-top: -126px;
+    margin-top: -110px;
 
 
     &--big {
@@ -151,5 +161,16 @@
 
   .good-card__row {
     width: 169px;
+    margin: 2px auto;
+  }
+
+  .good-card__image {
+    margin-top: -68px;
+    margin-left: -13px;
+    margin-right: -40px;
+
+    &--big {
+      margin-top: -103px;
+    }
   }
 }

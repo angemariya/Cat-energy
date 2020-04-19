@@ -71,7 +71,7 @@
   font-family: $font-a;
   color: $grey-text;
   border-bottom: 1px solid $inside;
-  padding-bottom: 23px;;
+  padding-bottom: 23px;
   margin: 0;
   margin-bottom: 18px;
 
@@ -186,7 +186,48 @@
     box-sizing: border-box;
   }
 
+  .program__header {
+    padding-left: 162px;
+    margin-bottom: 69px;
+
+    &--slim {
+      &::before {
+        top: -34px;
+        left: 0;
+        width: 100px;
+        height: 100px;
+      }
+
+      &::after {
+        left: 14px;
+        width: 71px;
+        height: 97px;
+        top: -40px;
+      }
+    }
+
+    &--pro {
+      &::before {
+        top: -34px;
+        left: 0;
+        width: 100px;
+        height: 100px;
+      }
+
+      &::after {
+        left: -17px;
+        width: 134px;
+        height: 57px;
+        top: -13px;
+      }
+    }
+  }
+
   .program__word-wrap {
     display: inline;
+  }
+
+  .program__text {
+    margin-bottom: 8px;
   }
 }

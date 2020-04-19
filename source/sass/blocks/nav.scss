@@ -13,3 +13,10 @@
     align-items: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .nav {
+    width: 1300px;
+    padding: 45px 42px;
+  }
+}

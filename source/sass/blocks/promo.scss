@@ -58,7 +58,7 @@
     text-align: left;
 
     @include text (none, 60px);
-    margin-bottom: 44px;
+    margin-bottom: 39px;
   }
 
   .promo__text {
@@ -81,8 +81,8 @@
     padding: 16px 27px;
     font-size: 20px;
     position: absolute;
-    top: 272px;
-    left: -100px;
+    top: 267px;
+    left: -102px;
   }
 }
 
@@ -90,6 +90,7 @@
   .promo {
     min-height: 500px;
     padding-bottom: 30px;
+    position: relative;
   }
 
   .promo__wrapper-desk {
@@ -97,30 +98,25 @@
     flex-direction: column;
   }
 
-  .promo__image {
-    order: 1;
-    margin-top: -200px;
-    margin-left: 365px;
+  .promo__wrapper {
+    margin-top: 24px;
+    margin-left: 80px;
+    margin-bottom: 53px;
   }
 
-  // .promo__wrapper {
-  //   position: relative;
+  .promo__header {
+    margin-bottom: 40px;
+  }
 
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     display: block;
-  //     top: -50px;
-  //     left: 400px;
-  //     background-image: url("../img/index-can-desktop@1x.png");
-  //     background-repeat: no-repeat;
-  //     width: 552px;
-  //     height: 499px;
-  //   }
-  // }
+  .promo__image {
+    position: absolute;
+    top: -17px;
+    left: 450px;
+  }
 
   .promo__button {
     margin: 0;
     position: static;
+    margin-left: 80px;
   }
 }

@@ -8,7 +8,8 @@
   text-align: left;
   line-height: 21px;
   margin: 0;
-  margin-right: 18px;
+  margin-right: 17px;
+  width: 172px;
 }
 
 .contact__descr {
@@ -55,5 +56,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contact {
+    position: relative;
+  }
 
+  .contact__address {
+    position: relative;
+    top: 93px;
+    right: 0;
+    width: 570px;
+    height: 210px;
+    background-color: white;
+    z-index: 1;
+    padding: 46px;
+  }
 }

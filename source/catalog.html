@@ -60,10 +60,10 @@
         <ul class="goods-main-list">
           <li class="good-card">
             <div class="good-card__wrapper">
-              <picture class="good-card__image">
+              <picture>
                 <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png">
                 <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png" >
-                <img src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy Курица 500 грамм" >
+                <img class="good-card__image" src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy Курица 500 грамм" >
               </picture>
               <div class="good-card__wrapper-sm">
                 <h3 class="good-card__title">Cat Energy PRO 500 г</h3>
@@ -88,10 +88,10 @@
 
           <li class="good-card">
             <div class="good-card__wrapper">
-              <picture class="good-card__image good-card__image--big">
+              <picture>
                 <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png">
                 <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
-                <img src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy Курица 1000 грамм">
+                <img class="good-card__image good-card__image--big" src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy Курица 1000 грамм">
               </picture>
               <div class="good-card__wrapper-sm">
                 <h3 class="good-card__title" >Cat Energy PRO 1000 г</h3>
@@ -116,10 +116,10 @@
 
           <li class="good-card">
             <div class="good-card__wrapper">
-              <picture class="good-card__image">
+              <picture>
                 <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png">
                 <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
-                <img src="img/fish-small-mobile@1x.jpg" alt="Cat Energy Рыба 500 грамм">
+                <img class="good-card__image" src="img/fish-small-mobile@1x.jpg" alt="Cat Energy Рыба 500 грамм">
               </picture>
 
               <div class="good-card__wrapper-sm">
@@ -145,10 +145,10 @@
 
           <li class="good-card">
             <div class="good-card__wrapper">
-              <picture class="good-card__image good-card__image--big">
+              <picture>
                 <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
                 <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
-                <img src="img/fish-big-mobile@1x.jpg" alt="Cat Energy Рыба 1000 грамм">
+                <img class="good-card__image good-card__image--big" src="img/fish-big-mobile@1x.jpg" alt="Cat Energy Рыба 1000 грамм">
               </picture>
               <div class="good-card__wrapper-sm">
                 <h3 class="good-card__title" >Cat Energy PRO 1000 г</h3>
@@ -173,10 +173,10 @@
 
           <li class="good-card">
             <div class="good-card__wrapper">
-              <picture class="good-card__image">
+              <picture>
                 <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
                 <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
-                <img src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy Гречка 500 грамм">
+                <img class="good-card__image" src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy Гречка 500 грамм">
               </picture>
               <div class="good-card__wrapper-sm">
                 <h3 class="good-card__title" >Cat Energy SLIM 500 г</h3>
@@ -201,10 +201,10 @@
 
           <li class="good-card">
             <div class="good-card__wrapper">
-              <picture class="good-card__image good-card__image--big">
+              <picture>
                 <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png">
                 <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
-                <img src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy Гречка 1000 грамм">
+                <img class="good-card__image good-card__image--big" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy Гречка 1000 грамм">
               </picture>
               <div class="good-card__wrapper-sm">
                 <h3 class="good-card__title">Cat Energy SLIM 1000 г</h3>
@@ -229,10 +229,10 @@
 
           <li class="good-card">
             <div class="good-card__wrapper">
-              <picture class="good-card__image">
+              <picture>
                 <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
                 <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
-                <img src="img/rice-small-mobile@1x.jpg" alt="Cat Energy Рис 500 грамм">
+                <img class="good-card__image" src="img/rice-small-mobile@1x.jpg" alt="Cat Energy Рис 500 грамм">
               </picture>
               <div class="good-card__wrapper-sm">
                 <h3 class="good-card__title">Cat Energy SLIM 500 г</h3>
@@ -353,14 +353,12 @@
       </section>
 
       <section class="contact">
-        <div class="contact__address container">
-          <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
-          <div class="contact__descr-wrapper">
-            <p class="contact__descr">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="contact__descr">Санкт-Петербург</p>
+        <div class="container">
+          <div class="contact__address">
+            <p class="contact__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <p class="contact__descr">ул. Большая Конюшенная, д. 19/8 <span class="contact__city">Санкт-Петербург</span></p>
           </div>
         </div>
-
         <div class="map-wrapper">
           <iframe class="map-wrapper__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5855003714323!2d30.322739976187407!3d59.9390199034087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sde!4v1586977974911!5m2!1sru!2sde" width="320" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
