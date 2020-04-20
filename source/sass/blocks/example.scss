@@ -62,6 +62,11 @@
   margin-right: 30px;
 }
 
+.example__word-wrap {
+  display: inline;
+}
+
+
 @media (min-width: $tablet-width) {
   .example {
     padding: 8px 0;
@@ -91,13 +96,13 @@
 
   .example__header {
     margin-top: 0;
-    margin-bottom: 49px;
+    margin-bottom: 62px;
   }
 
   .example__text {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 29px;
   }
 
   .example__word-wrap {
@@ -134,32 +139,41 @@
     text-align: right;
     line-height: 22px;
   }
+
+  .example__word-wrap {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .example {
     padding: 0;
-    padding-top: 15px;
+    padding-top: 16px;
+    padding-bottom: 3px;
 
     &::after {
-      background-image: linear-gradient(to right, #f2f2f2 calc(50% + 300px), #eaeaea calc(50% + 300px));
+      margin-bottom: 39px;
+      background-image: linear-gradient(to right, #f2f2f2 calc(50% + 325px), #eaeaea calc(50% + 325px));
+      height: 477px;
+      bottom: -53px;
     }
   }
 
-
   .example__text {
-    width: 430px;
+    width: 472px;
     margin-bottom: 63px;
-    padding-right: 93px;
+    // padding-right: 93px;
   }
 
   .example__header {
-    margin-bottom: 148px;
-    margin-top: 56px;
+    margin-bottom: 147px;
+    margin-top: 53px;
   }
 
   .example__calculate {
     text-align: left;
+    width: auto;
+    margin-top: 54px;
   }
 
   .example__wrapper-sm {
@@ -167,6 +181,8 @@
     position: relative;
     z-index: 2;
     width: 530px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
   }
 
   .example__wrapper {
@@ -175,5 +191,19 @@
 
   .example__stats {
     flex-direction: column;
+  }
+
+  .example__word-wrap {
+    display: inline-block;
+    margin-left: 59px;
+
+    &--intext {
+      display: inline;
+      margin: 0;
+    }
+  }
+
+  .example__data-desc {
+    background-color: #f2f2f2;
   }
 }

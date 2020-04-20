@@ -135,14 +135,16 @@
 @media (min-width: $desktop-width) {
   .preferences {
     padding-top: 0;
-    padding-bottom: 13px;
+    padding-bottom: 0;
     margin-bottom: 0;
+    border-bottom: none;
   }
 
   .preferences__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 31px;
   }
 
   .preferences__item {
@@ -150,6 +152,15 @@
     margin-bottom: 0;
     margin-top: 15px;
     min-height: 240px;
+    padding-top: 144px;
+
+    &::after {
+      bottom: -29px;
+    }
+  }
+
+  .preferences__text {
+    line-height: 24px;
   }
 
   .preferences__header {
