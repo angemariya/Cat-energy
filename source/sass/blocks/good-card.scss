@@ -85,7 +85,7 @@
   .good-card__title {
     display: block;
     margin: 0 auto;
-    margin-top: 49px;
+    margin-top: 39px;
     margin-bottom: 28px;
     font-size: 20px;
     width: 128px;
@@ -102,6 +102,10 @@
 
   .good-card__wrapper {
     flex-direction: column;
+
+    &--grey {
+      padding-top: 90px;
+    }
   }
 
   .good-card {
@@ -147,6 +151,7 @@
     align-items: center;
     margin-right: 20px;
     padding: 20px;
+    padding-bottom: 40px;
   }
 
   .good-card__wrapper {
@@ -172,5 +177,9 @@
     &--big {
       margin-top: -103px;
     }
+  }
+
+  .good-card__title {
+    margin-top: 33px;
   }
 }

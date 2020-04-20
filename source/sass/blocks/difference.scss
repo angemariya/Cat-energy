@@ -136,3 +136,21 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .difference__before-wrapper {
+    margin-bottom: 0;
+    width: 366px;
+  }
+
+  .difference__before-img {
+    height: 100%;
+  }
+
+  .difference__wrapper-img {
+    position: relative;
+    height: 100%;
+    width: 690px;
+    right: -40px;
+  }
+}

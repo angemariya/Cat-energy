@@ -137,8 +137,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    padding: 0;
+    padding-top: 15px;
+
+    &::after {
+      background-image: linear-gradient(to right, #f2f2f2 calc(50% + 300px), #eaeaea calc(50% + 300px));
+    }
+  }
+
+
   .example__text {
     width: 430px;
+    margin-bottom: 63px;
+    padding-right: 93px;
+  }
+
+  .example__header {
+    margin-bottom: 148px;
+    margin-top: 56px;
   }
 
   .example__calculate {
@@ -146,10 +163,10 @@
   }
 
   .example__wrapper-sm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 530px;
   }
 
   .example__wrapper {
