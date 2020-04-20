@@ -29,10 +29,11 @@
   .gift {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     width: 708px;
-    min-height: 200px;
+    min-height: 169px;
     flex-direction: row;
     padding-left: 90px;
     padding-right: 80px;
+    padding-bottom: 73px;
     margin-top: 70px;
     margin-bottom: 76px;
   }
@@ -40,6 +41,7 @@
   .gift__text {
     padding: 0;
     text-align: left;
+    margin-right: 45px;
   }
 }
 
@@ -49,11 +51,15 @@
     width: 245px;
     min-height: 289px;
     flex-direction: column;
+    padding-top: 67px;
+    padding-bottom: 43px;
+    margin: 0;
   }
 
   .gift__text {
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 181px;
+    margin: 0;
+    margin-right: 25px;
     text-align: center;
   }
 }

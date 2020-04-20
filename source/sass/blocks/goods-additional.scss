@@ -32,7 +32,7 @@
     width: fit-content;
     padding-left: 37px;
     padding-right: 37px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 68px;
     margin-bottom: 79px;
   }
@@ -52,5 +52,12 @@
   .goods-additional__list {
     flex-grow: 1;
     margin-right: 80px;
+  }
+
+  .goods-additional__title {
+    padding-left: 38px;
+    margin-left: -39px;
+    margin-top: 26px;
+    margin-bottom: 24px;
   }
 }

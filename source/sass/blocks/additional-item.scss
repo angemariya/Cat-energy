@@ -67,17 +67,20 @@
     margin-top: 12px;
     padding-bottom: 25px;
   }
-.additional-item__data {
-  font-size: 16px;
-  margin-top: 16px;
-}
 
+  .additional-item__data {
+    font-size: 16px;
+    margin-top: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .additional-item {
     display: flex;
     align-items: baseline;
+    padding-bottom: 0;
+    padding-left: 2px;
+    padding-right: 1px;
   }
 
   .additional-item__wrapper-tab {
@@ -90,6 +93,10 @@
   }
 
   .additional-item__wrapper {
-    width: 210px; //временно
+    width: 292px;
+  }
+
+  .additional-item__data:nth-child(1) {
+    margin-right: 112px;
   }
 }
