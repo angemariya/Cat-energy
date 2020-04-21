@@ -26,6 +26,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .goods-additional__list {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
   .goods-additional__title {
     font-size: 36px;
     line-height: 1;

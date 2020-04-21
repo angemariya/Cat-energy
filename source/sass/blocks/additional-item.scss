@@ -41,7 +41,9 @@
 
 @media (min-width: $tablet-width) {
   .additional-item {
-    border: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
     padding-top: 14px;
     padding-bottom: 26px;
     padding-left: 38px;

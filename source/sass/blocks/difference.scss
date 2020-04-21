@@ -72,9 +72,9 @@
     background-image: linear-gradient(to top, #f2f2f2 349px, #ffffff 349px);
   }
 
-  .difference__after-wrapper {
-    background-image: linear-gradient(to top, #eaeaea 349px, #ffffff 349px);
-  }
+  // .difference__after-wrapper {
+  //   background-image: linear-gradient(to top, #eaeaea 349px, #ffffff 349px);
+  // }
 
   .difference__after-img {
     display: block;
@@ -147,16 +147,15 @@
     width: 345px;
     background-image: linear-gradient(to top, #f2f2f2 434px, #ffffff 434px);
     height: 100%;
-    top: 1px;
-    right: 367px;
+    top: -1px;
+    right: 368px;
   }
 
-  .difference__after-wrapper {
-    // height: 100%;
-    max-width: none;
-    width: 691px;
-    background-image: linear-gradient(to top, #eaeaea 433px, #ffffff 434px);
-  }
+  // .difference__after-wrapper {
+  //   // height: 100%;
+  //   // max-width: none;
+  //   // background-image: linear-gradient(to top, #eaeaea 433px, #ffffff 434px);
+  // }
 
   .difference__before-img {
     height: 100%;
