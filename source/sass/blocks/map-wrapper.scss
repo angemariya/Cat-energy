@@ -16,10 +16,12 @@
   .map-wrapper {
     background-image: url("../img/bg-map-tablet@1x.png");
     background-size: $tablet-width 400px;
+    height: 400px;
   }
 
   .map-wrapper__iframe {
     width: 100%;
+    height: 400px;
   }
 }
 
@@ -27,5 +29,9 @@
   .map-wrapper {
     background-image: url("../img/bg-map-desktop@1x.png");
     background-size: 1440px 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
   }
 }

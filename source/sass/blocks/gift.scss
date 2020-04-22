@@ -21,7 +21,7 @@
   font-family: $font-a;
   line-height: 1.25;
   text-align: center;
-  width: 160px;
+  width: 164px;
   margin: 0;
 }
 
@@ -33,15 +33,16 @@
     flex-direction: row;
     padding-left: 90px;
     padding-right: 80px;
-    padding-bottom: 73px;
-    margin-top: 70px;
-    margin-bottom: 76px;
+    padding-bottom: 68px;
+    margin-top: 74px;
+    margin-bottom: 72px;
   }
 
   .gift__text {
     padding: 0;
     text-align: left;
     margin-right: 45px;
+    width: 161px;
   }
 }
 
@@ -53,13 +54,14 @@
     flex-direction: column;
     padding-top: 67px;
     padding-bottom: 43px;
+    padding-left: 80px;
     margin: 0;
   }
 
   .gift__text {
-    width: 181px;
+    width: 165px;
     margin: 0;
-    margin-right: 25px;
+    margin-right: 0;
     text-align: center;
   }
 }

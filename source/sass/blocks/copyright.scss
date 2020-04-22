@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding-bottom: 34px;
 }
 
 .copyright__text {
@@ -10,4 +10,37 @@
 
   @include text (none, 16px);
   color: $grey-text;
+}
+
+.copyright__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-bottom: 15px;
+  }
+
+  .copyright__text {
+    padding-bottom: 0;
+  }
+
+  .copyright__logo {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .copyright__img {
+    margin-left: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__img {
+    margin-left: 25px;
+  }
 }

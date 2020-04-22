@@ -1,5 +1,15 @@
 .contact {
   background-color: white;
+
+  &--catalog {
+    background-color: $grey;
+  }
+}
+
+.contact__container {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .contact__title {
@@ -26,9 +36,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact__container {
+    width: 768px;
+    padding: 0 30px;
+  }
+
   .contact__address {
-    padding-top: 92px;
-    padding-bottom: 62px;
+    padding-top: 68px;
+    padding-bottom: 58px;
     padding-left: 40px;
     padding-right: 41px;
     justify-content: space-between;
@@ -37,37 +52,61 @@
   .contact__title {
     width: 155px;
     font-size: 20px;
+    line-height: 24px;
   }
 
   .contact__city {
     display: block;
+    margin-top: 21px;
   }
 
   .contact__descr {
     width: 155px;
     text-align: right;
     font-size: 16px;
-    line-height: 20px;
-
-    &:nth-child(2) {
-      margin-top: 10px;
-    }
+    line-height: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contact__container {
+    position: relative;
+    padding: 0 56px;
+    z-index: 3;
+    padding-top: 90px;
+    margin: 0;
+  }
+
   .contact {
+    height: 400px;
     position: relative;
   }
 
   .contact__address {
-    position: relative;
-    top: 93px;
-    right: 0;
     width: 570px;
-    height: 210px;
     background-color: white;
-    z-index: 1;
-    padding: 46px;
+    padding-top: 69px;
+    padding-left: 72px;
+    padding-right: 93px;
+    padding-bottom: 62px;
+  }
+
+  .contact__descr {
+    text-align: left;
+    margin-left: auto;
+
+    &:nth-child(2) {
+      margin: 0;
+    }
+  }
+
+  .contact__title {
+    line-height: 25px;
+    margin: 0;
+  }
+
+  .contact__city {
+    margin-top: 0;
+    padding-top: 23px;
   }
 }

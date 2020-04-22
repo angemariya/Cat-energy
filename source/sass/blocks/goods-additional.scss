@@ -7,10 +7,10 @@
   @include text (none, 24px);
   font-weight: normal;
   padding-right: 25px;
-  padding-left: 40px;
-  margin-left: -40px;
-  margin-top: 36px;
-  margin-bottom: 34px;
+  padding-left: 38px;
+  margin-left: -39px;
+  margin-top: 30px;
+  margin-bottom: 32px;
 }
 
 .goods-additional__list {
@@ -48,9 +48,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .good-additional__catalog-wrap {
+  .goods-additional {
+    margin-bottom: 89px;
+  }
+
+  .goods-additional__catalog-wrap {
     display: flex;
-    margin-top: 80px;
+    padding-top: 55px;
   }
 
   .goods-additional__list {
