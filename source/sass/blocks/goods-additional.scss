@@ -1,14 +1,16 @@
 .goods-additional__title {
   color: $black-title;
   text-align: left;
-  padding-right: 25px;
   width: max-content;
   background-color: white;
 
   @include text (none, 24px);
   font-weight: normal;
-  padding-left: 40px;
-  margin-left: -40px;
+  padding-right: 25px;
+  padding-left: 38px;
+  margin-left: -39px;
+  margin-top: 30px;
+  margin-bottom: 32px;
 }
 
 .goods-additional__list {
@@ -24,12 +26,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .goods-additional__list {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
   .goods-additional__title {
     font-size: 36px;
     line-height: 1;
     width: fit-content;
-    padding-left: 10px;
-    margin-left: -10px;
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-left: 0;
+    margin-top: 68px;
+    margin-bottom: 79px;
   }
 
   .goods-additional__green-line {
@@ -39,12 +48,24 @@
 }
 
 @media (min-width: $desktop-width) {
-  .good-additional__catalog-wrap {
+  .goods-additional {
+    margin-bottom: 89px;
+  }
+
+  .goods-additional__catalog-wrap {
     display: flex;
+    padding-top: 55px;
   }
 
   .goods-additional__list {
     flex-grow: 1;
     margin-right: 80px;
+  }
+
+  .goods-additional__title {
+    padding-left: 38px;
+    margin-left: -39px;
+    margin-top: 26px;
+    margin-bottom: 24px;
   }
 }

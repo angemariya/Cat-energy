@@ -19,14 +19,14 @@
   .nav-list {
     flex-direction: row;
     justify-content: flex-start;
-    height: auto;
+    margin-top: 22px;
   }
 
   .nav-list__item {
     border: none;
     padding-top: 0;
     padding-bottom: 12px;
-    margin-left: 36px;
+    margin-left: 35px;
 
     &--active {
       position: relative;
@@ -45,6 +45,7 @@
 
   .nav-list__link {
     font-size: 18px;
+    font-weight: 400;
   }
 }
 

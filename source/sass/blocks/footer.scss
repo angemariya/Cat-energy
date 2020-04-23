@@ -1,6 +1,5 @@
 .footer {
   background-color: $grey;
-  background-size: 100%;
 }
 
 .footer__wrapper {
@@ -9,6 +8,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer {
+    padding-top: 30px;
+  }
+
   .footer__wrapper {
     flex-direction: row;
     justify-content: space-between;

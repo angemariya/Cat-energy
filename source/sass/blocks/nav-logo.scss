@@ -1,3 +1,15 @@
 .nav-logo {
   margin-top: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .nav-logo__image {
+    width: 174px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-logo__image {
+    width: 200px;
+  }
+}

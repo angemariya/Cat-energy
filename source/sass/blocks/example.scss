@@ -1,6 +1,12 @@
 .example {
   background-color: $grey;
   padding: 20px 0;
+  padding-bottom: 39px;
+}
+
+.example__header {
+  margin-top: 10px;
+  margin-bottom: 36px;
 }
 
 .example__text {
@@ -10,6 +16,8 @@
   line-height: 1.29;
   text-align: left;
   color: $grey-text;
+  padding-right: 2px;
+  margin-bottom: 20px;
 }
 
 .example__data {
@@ -41,6 +49,7 @@
   @include text (uppercase, 14px);
   text-align: center;
   color: $black-title;
+  margin-top: 16px;
 }
 
 .example__table-wrap {
@@ -50,12 +59,31 @@
 .example__col {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
+  margin-right: 30px;
 }
+
+.example__word-wrap {
+  display: inline;
+}
+
 
 @media (min-width: $tablet-width) {
   .example {
-    background-image: linear-gradient(to bottom, white 40%, $grey 40%, $grey 80%);
+    padding: 0;
+    padding-bottom: 30px;
+    background-color: white;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      height: 462px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to left, #eaeaea 50%, #f2f2f2 50%);
+    }
   }
 
   .example__wrapper {
@@ -63,12 +91,19 @@
     flex-direction: column;
   }
 
+  .example__wrapper-sm {
+    margin-bottom: 80px;
+  }
+
   .example__header {
-    margin-top: 50px;
+    margin-top: 9px;
+    margin-bottom: 62px;
   }
 
   .example__text {
     font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 51px;
   }
 
   .example__stats {
@@ -79,9 +114,15 @@
   .example__data {
     width: 162px;
     font-size: 30px;
+    padding-bottom: 25px;
+  }
+
+  .example__col {
+    margin-right: 38px;
   }
 
   .example__data-desc {
+    font-size: 14px;
     width: auto;
     background-color: white;
     border: none;
@@ -90,23 +131,53 @@
 
   .example__calculate {
     font-size: 20px;
+    width: 174px;
+    text-align: right;
+    line-height: 26px;
+    margin-top: 12px;
+  }
+
+  .example__word-wrap {
+    display: inline-block;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    padding: 0;
+    padding-top: 16px;
+
+    &::after {
+      margin-bottom: 39px;
+      background-image: linear-gradient(to right, #f2f2f2 calc(50% + 325px), #eaeaea calc(50% + 325px));
+      height: 477px;
+      bottom: -53px;
+    }
+  }
+
   .example__text {
-    width: 430px;
+    width: 440px;
+    margin-bottom: 63px;
+  }
+
+  .example__header {
+    margin-bottom: 147px;
+    margin-top: 53px;
   }
 
   .example__calculate {
     text-align: left;
+    width: auto;
+    margin-top: 54px;
   }
 
   .example__wrapper-sm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 530px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
   }
 
   .example__wrapper {
@@ -115,5 +186,19 @@
 
   .example__stats {
     flex-direction: column;
+  }
+
+  .example__word-wrap {
+    display: inline-block;
+    margin-left: 59px;
+
+    &--intext {
+      display: inline;
+      margin: 0;
+    }
+  }
+
+  .example__data-desc {
+    background-color: #f2f2f2;
   }
 }
