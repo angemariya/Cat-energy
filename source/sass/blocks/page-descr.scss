@@ -2,14 +2,17 @@
   @include text (uppercase, 14px);
   text-align: left;
   color: $black-title;
-  line-height: 1.5;
+  line-height: 1.29;
+  width: 230px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
   .page-descr {
     font-size: 20px;
-    width: 370px;
     padding-left: 40px;
+    width: 382px;
+    line-height: 30px;
   }
 }
 

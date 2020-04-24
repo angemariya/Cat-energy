@@ -8,10 +8,30 @@
   margin: 0 auto;
   margin-top: 23px;
   margin-bottom: 30px;
+
+  &--form {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tip {
+    margin-left: 82px;
+
+    &--form {
+      margin: 0;
+      padding-bottom: 13px;
+      font-size: 16px;
+      padding-left: 63px;
+      padding-top: 12px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .tip {
-    margin-left: 82px;
+    &--form {
+      padding-left: 83px;
+    }
   }
 }

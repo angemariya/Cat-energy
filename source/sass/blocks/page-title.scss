@@ -17,6 +17,10 @@
     margin-bottom: 38px;
   }
 
+  &--form {
+    margin-bottom: 34px;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: left;
     font-size: 60px;
@@ -24,8 +28,13 @@
     margin-bottom: 75px;
 
     &--catalog {
+      margin-top: 41px;
       margin-bottom: 26px;
-      margin-top: 36px;
+    }
+
+    &--form {
+      margin-bottom: 57px;
+      margin-top: 42px;
     }
   }
 }
@@ -33,8 +42,13 @@
 @media (min-width: $desktop-width) {
   .page-title {
     &--catalog {
+      margin-top: 30px;
       margin-bottom: 25px;
+    }
+
+    &--form {
       margin-top: 32px;
+      margin-bottom: 54px;
     }
   }
 }

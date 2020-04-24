@@ -1,7 +1,7 @@
 .good-card {
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
   padding-top: 22px;
   border: 1px solid $inside;
   border-bottom: none;
@@ -92,7 +92,7 @@
     background-color: $grey;
     border: none;
     padding: 38px;
-    margin-top: 151px;
+    margin-top: 152px;
     margin-right: 59px;
     width: 324px;
 
@@ -101,7 +101,6 @@
     }
   }
 }
-
 
 @media (min-width: $tablet-width) {//             TABLET
   .good-card__title {
@@ -123,7 +122,7 @@
 
   .good-card__description {
     line-height: 1;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
     width: 100%;
     border: none;
   }
@@ -138,7 +137,7 @@
     flex-direction: column;
 
     &--grey {
-      padding-top: 119px;
+      padding-top: 113px;
 
       &::before {
         background-image: url("../img/icon-plus.svg");

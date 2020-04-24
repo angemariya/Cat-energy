@@ -37,10 +37,10 @@
       <nav class="nav container">
         <div class="nav-wrapper">
           <a class= "nav-logo" href="#">
-            <picture class="nav-logo__image">
+            <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
+              <img class="nav-logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
             </picture>
           </a>
           <button class="nav-toggle" type="button"><span class="nav-toggle__hamburger" aria-label="Меню"></span></button>
@@ -362,16 +362,18 @@
             </div>
           </div>
         </div>
-
       </section>
 
       <section class="contact contact--catalog">
         <div class="contact__container">
-          <div class="contact__address">
+          <div class="contact__address contact__address--catalog">
             <p class="contact__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-            <p class="contact__descr">ул. Большая Конюшенная, д. 19/8 <span class="contact__city">Санкт-Петербург</span></p>
+            <p class="contact__descr">ул. Большая Конюшенная, д. 19/8
+              <span class="contact__city">Санкт-Петербург</span>
+            </p>
           </div>
         </div>
+
         <div class="map-wrapper">
           <iframe class="map-wrapper__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5855003714323!2d30.322739976187407!3d59.9390199034087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sde!4v1586977974911!5m2!1sru!2sde" width="320" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
@@ -381,7 +383,7 @@
       <div class="container">
         <div class="footer__wrapper">
           <a class="logo-text" href="#" aria-label="На главную страницу">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.8 23.4" width="135" height="35" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.8 23.4" width="131" height="35" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve">
               <style type="text/css">
                 .st1 {
                   fill: #111111;
