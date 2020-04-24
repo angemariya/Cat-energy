@@ -6,8 +6,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 23px;
-  padding-top: 23px;
+  margin-bottom: 22px;
+  padding-top: 20px;
   padding-bottom: 6px;
   padding-right: 61px;
   padding-left: 52px;
@@ -28,7 +28,7 @@
     border: none;
     padding-top: 28px;
     padding-right: 55px;
-    padding-left: 72px;
+    padding-left: 76px;
   }
 
   .social-links__item {
@@ -53,3 +53,9 @@
     }
   }
 }
+
+// @media (min-width: $desktop-width) {
+//   .social-link {
+//     padding-left: 76px;
+//   }
+// }

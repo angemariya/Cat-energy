@@ -4,9 +4,9 @@
   color: white;
   background-color: $green;
   width: 280px;
-  height: 40px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 11px;
+  padding-bottom: 12px;
   box-sizing: border-box;
   display: block;
 
@@ -37,6 +37,10 @@
   .card-button {
     &--form {
       margin: 0;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      width: 283px;
+      font-size: 20px;
     }
   }
 }

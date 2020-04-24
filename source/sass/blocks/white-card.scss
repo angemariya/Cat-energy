@@ -2,7 +2,14 @@
   border: 1px solid $inside;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $tab-max-width) {
+  .white-card {
+    background-color: white;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .white-card {
     background-color: white;
   }
