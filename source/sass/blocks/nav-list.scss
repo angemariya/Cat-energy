@@ -4,6 +4,12 @@
   flex-direction: column;
 }
 
+.nav-list__link {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .nav-list__item {
   @include text(uppercase, 20px);
   font-weight: 500;
@@ -64,6 +70,14 @@
 
   .nav-list__link {
     font-size: 20px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .nav-list__item {

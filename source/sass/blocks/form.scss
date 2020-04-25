@@ -12,6 +12,10 @@
     padding-left: 64px;
     margin-bottom: 7px;
 
+    &:active {
+      opacity: 0.3;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -21,6 +25,12 @@
       border: 1px solid $radio;
       top: 4px;
       left: 20px;
+    }
+
+    &:hover {
+      &::before {
+        border: 1px solid $radio-hvr;
+      }
     }
 
     //точка у радио
@@ -41,9 +51,13 @@
   &--checkbox {
     padding-left: 46px;
     padding-right: 0;
-    padding-top: 8px;
+    padding-top: 9px;
     padding-bottom: 7px;
     margin-bottom: -4px;
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &::before {
       content: "";
@@ -54,6 +68,12 @@
       width: 30px;
       height: 30px;
       border: 1px solid $radio;
+    }
+
+    &:hover {
+      &::before {
+        border: 1px solid $radio-hvr;
+      }
     }
 
     //галочка у чекбокса
@@ -123,6 +143,47 @@
 
   &--radio {
     @include visually-hidden;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: $grey-text;
+  }
+
+  &:focus {
+    outline: 2px solid $input-active;
+
+    &:invalid {
+      outline: 2px solid $input-active;
+    }
+  }
+
+  // &:focus:invalid + .form__icon-email,
+  // &:focus:invalid + .form__icon-phone {
+  //   fill: $input-error;
+  // }
+
+  &:invalid {
+    outline: 2px solid $input-error;
+  }
+
+  &:hover {
+    outline: 1px solid $radio;
+  }
+
+  &:hover + .form__icon-email,
+  &:hover + .form__icon-phone {
+    fill: $green;
+  }
+
+  &:focus + .form__icon-email,
+  &:focus + .form__icon-phone {
+    fill: #222222;
+  }
+
+  &:focus:invalid + .form__icon-email,
+  &:focus:invalid + .form__icon-phone {
+    fill: $input-error;
   }
 }
 
@@ -201,7 +262,7 @@
 
   &--extra {
     padding-top: 0;
-    padding-bottom: 27px;
+    padding-bottom: 22px;
     border: none;
   }
 }
@@ -416,7 +477,7 @@
     }
 
     &--extra {
-      padding-bottom: 27px;
+      padding-bottom: 22px;
     }
   }
 
@@ -463,6 +524,12 @@
     &--textarea {
       margin-top: 2px;
       margin-bottom: 77px;
+    }
+  }
+
+  .form__label {
+    &--checkbox {
+      padding-top: 13px;
     }
   }
 }

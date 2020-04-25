@@ -46,6 +46,11 @@
   margin: 0 auto;
 
   @include text (uppercase, 14px);
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $green-btn-hvr;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -124,5 +129,9 @@
     margin: 0;
     position: static;
     margin-left: 80px;
+
+    &:hover {
+      background-color: $green-btn-hvr;
+    }
   }
 }
