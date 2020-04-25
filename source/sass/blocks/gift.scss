@@ -2,16 +2,14 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   width: 280px;
-  min-height: 289px;
   margin-top: 40px;
   margin-bottom: 35px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background-color: $green;
-  padding-top: 65px;
-  padding-bottom: 43px;
+  padding-top: 73px;
+  padding-bottom: 42px;
 }
 
 @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
@@ -29,27 +27,31 @@
   line-height: 1.25;
   text-align: center;
   width: 164px;
-  margin: 0;
+  margin-top: 53px;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
   .gift {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     width: 708px;
-    min-height: 169px;
     flex-direction: row;
     padding-left: 90px;
     padding-right: 80px;
-    padding-bottom: 68px;
-    margin-top: 77px;
-    margin-bottom: 76px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    padding-top: 48px;
+    padding-bottom: 38px;
   }
 
   .gift__text {
     padding: 0;
     text-align: left;
-    margin-right: 45px;
-    width: 161px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin: 0;
+    margin-left: 277px;
+    width: 185px;
   }
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
@@ -75,8 +77,10 @@
   .gift__text {
     width: 165px;
     margin: 0;
-    margin-right: 0;
     text-align: center;
+    margin-top: 52px;
+    padding-top: 4px;
+    padding-bottom: 2px;
   }
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {

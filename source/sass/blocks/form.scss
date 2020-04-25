@@ -324,7 +324,6 @@
   }
 
   .form__title {
-    width: fit-content;
     font-size: 36px;
     padding-left: 37px;
     padding-right: 37px;
@@ -332,6 +331,7 @@
     margin-bottom: 57px;
 
     &--contact {
+      width: 595px;   //for IE11
       padding-left: 37px;
       padding-right: 42px;
       margin-left: -38px;
@@ -339,6 +339,7 @@
     }
 
     &--textarea {
+      width: 255px; //for IE11
       padding-right: 43px;
       padding-left: 35px;
       margin-bottom: 75px;
@@ -346,10 +347,13 @@
     }
 
     &--extra {
+      width: 288px; //for IE11
       padding-left: 37px;
       padding-right: 41px;
       margin-left: -37px;
     }
+
+    width: fit-content;
   }
 
   .form__checkboxs-list {

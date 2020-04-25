@@ -35,21 +35,24 @@
 
 .example__data-desc {
   @include text (lowercase, 12px);
+  position: absolute;
+  bottom: -11px;
+  left: 18px;
   font-family: $font-a;
   color: $grey-text;
   padding: 0;
   background-color: $grey;
   border: 1px solid $grey;
   width: 84px;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
 }
 
 .example__calculate {
   @include text (uppercase, 14px);
   text-align: center;
   color: $black-title;
-  margin-top: 16px;
+  margin-top: 29px;
 }
 
 .example__table-wrap {
@@ -58,8 +61,9 @@
 
 .example__col {
   display: flex;
-  flex-direction: column;
-  margin-right: 27px;
+  margin-right: 30px;
+  padding-bottom: 12px;
+  position: relative;
 
   &:last-child {
     margin-right: 0;
@@ -127,15 +131,21 @@
 
   .example__data-desc {
     font-size: 14px;
-    width: auto;
+    width: 145px;
     background-color: white;
     border: none;
     padding: 0 8px;
+    top: 62px;
+    left: 8px;
+
+    &:last-child {
+      right: 12px;
+    }
   }
 
   .example__calculate {
     font-size: 20px;
-    width: 174px;
+    width: 175px;
     text-align: right;
     line-height: 26px;
     margin-top: 12px;
@@ -151,12 +161,13 @@
     padding: 0;
     padding-top: 16px;
 
-    &::after {
-      margin-bottom: 39px;
-      background-image: linear-gradient(to right, #f2f2f2 calc(50% + 325px), #eaeaea calc(50% + 325px));
-      height: 477px;
-      bottom: -53px;
-    }
+    //gradient doesn't work correct in IE11
+    // &::after {
+    //   margin-bottom: 39px;
+    //   background-image: linear-gradient(to right, #f2f2f2 calc(50% + 325px), #eaeaea calc(50% + 325px));
+    //   height: 477px;
+    //   bottom: -53px;
+    // }
   }
 
   .example__text {
@@ -204,5 +215,6 @@
 
   .example__data-desc {
     background-color: #f2f2f2;
+    width: 150px;
   }
 }
