@@ -60,6 +60,10 @@
   display: flex;
   flex-direction: column;
   margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .example__word-wrap {

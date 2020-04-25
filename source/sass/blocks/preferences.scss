@@ -32,6 +32,7 @@
     background-color: $green;
     background-size: 50px 50px;
     background-position: center;
+    background-repeat: no-repeat;
     top: 0;
     left: 0;
   }
@@ -57,6 +58,34 @@
   &--quickly {
     &::before {
       background-image: url("../img/advantage-clock@1x.png");
+    }
+  }
+}
+
+@media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+  .preferences__item {
+    &--healthy {
+      &::before {
+        background-image: url("../img/advantage-leaf@2x.png");
+      }
+    }
+
+    &--powdery {
+      &::before {
+        background-image: url("../img/advantage-powder@2x.png");
+      }
+    }
+
+    &--dietary {
+      &::before {
+        background-image: url("../img/advantage-dining@2x.png");
+      }
+    }
+
+    &--quickly {
+      &::before {
+        background-image: url("../img/advantage-clock@2x.png");
+      }
     }
   }
 }
