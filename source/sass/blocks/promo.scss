@@ -6,7 +6,7 @@
 
 @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
   .promo {
-    background-image: url("../../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #64a83b 305px, transparent 305px);
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #64a83b 305px, transparent 305px);
     background-size: 320px auto, 100% 100%;
   }
 }

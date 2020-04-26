@@ -35,10 +35,6 @@
   padding: 0 35px;
 }
 
-.difference__img {
-  max-width: none;
-}
-
 .difference__before-wrapper {
   padding-top: 25px;
   margin-bottom: 32px;
@@ -47,6 +43,10 @@
 .difference__before-img {
   max-width: none;
   margin-left: -20px;
+}
+
+.difference__after-wrapper {
+  display: none;
 }
 
 .difference__after-img {
@@ -63,6 +63,10 @@
     flex-direction: row;
     margin-bottom: 80px;
     position: relative;
+  }
+
+  .difference__after-wrapper {
+    display: block;
   }
 
   .difference__range {
