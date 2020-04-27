@@ -2,6 +2,16 @@
   margin: 0 auto;
   padding-top: 33px;
   padding-bottom: 27px;
+  display: block;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,5 +1,9 @@
 .nav-logo {
   margin-top: 12px;
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -11,5 +15,9 @@
 @media (min-width: $desktop-width) {
   .nav-logo__image {
     width: 200px;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

@@ -2,18 +2,13 @@
   background-color: $grey;
 }
 
-.footer__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (min-width: $tablet-width) {
   .footer {
     padding-top: 30px;
   }
 
   .footer__wrapper {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
   }
 }

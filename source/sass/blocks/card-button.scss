@@ -10,9 +10,27 @@
   box-sizing: border-box;
   display: block;
 
+  &:hover {
+    background-color: $green-btn-hvr;
+  }
+
+  &:active {
+    background-color: $green-btn-hvr;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--grey {
     background-color: $grey;
     color: $grey-text;
+
+    &:hover {
+      background-color: $inside;
+    }
+
+    &:active {
+      background-color: $inside;
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 
   &--form {

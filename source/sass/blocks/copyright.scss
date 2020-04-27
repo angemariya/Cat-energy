@@ -17,6 +17,21 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
+
+  &:active .copyright__text {
+    opacity: 0.3;
+  }
+}
+
+.copyright__img {
+  &:hover path {
+    fill: $green;
+  }
+
+  &:active {
+    fill: $green;
+    opacity: 0.3;
+  }
 }
 
 

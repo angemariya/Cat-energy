@@ -35,10 +35,6 @@
   padding: 0 35px;
 }
 
-.difference__img {
-  max-width: none;
-}
-
 .difference__before-wrapper {
   padding-top: 25px;
   margin-bottom: 32px;
@@ -47,6 +43,10 @@
 .difference__before-img {
   max-width: none;
   margin-left: -20px;
+}
+
+.difference__after-wrapper {
+  display: none;
 }
 
 .difference__after-img {
@@ -63,6 +63,10 @@
     flex-direction: row;
     margin-bottom: 80px;
     position: relative;
+  }
+
+  .difference__after-wrapper {
+    display: block;
   }
 
   .difference__range {
@@ -145,7 +149,28 @@
     padding: 0;
     padding-bottom: 6px;
     font-size: 20px;
-    border-bottom: 1px dotted #eaeaea;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+
+  .difference__button {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $green;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
   }
 
   .difference__range {

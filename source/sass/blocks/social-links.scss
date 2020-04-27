@@ -20,6 +20,15 @@
 
 .social-links__link {
   display: block;
+
+  &:hover path {
+    fill: $green;
+  }
+
+  &:active path {
+    fill: $green;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Подбор программы</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
     <!-- Pixel Glass -->
     <style>
       HTML {
@@ -79,13 +84,13 @@
             <fieldset class="form__fieldset form__fieldset--radio">
               <div class="form__radio-container">
                 <input class="form__control form__control--radio" type="radio" name="weight" id="weight-loss" value="weight-loss" checked>
-                <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
+                <label class="form__label form__label--radio" for="weight-loss" tabindex="0">Похудение</label>
 
                 <input class="form__control form__control--radio" type="radio" name="weight" id="weight-gain" value="weight-gain">
-                <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
+                <label class="form__label form__label--radio" for="weight-gain" tabindex="0">Набор массы</label>
 
                 <input class="form__control form__control--radio" type="radio" name="weight" id="need-advice" value="need-advice">
-                <label class="form__label form__label--radio" for="need-advice">Не знаю (нужен ваш совет)</label>
+                <label class="form__label form__label--radio" for="need-advice" tabindex="0">Не знаю (нужен ваш совет)</label>
               </div>
             </fieldset>
           </div>
@@ -141,19 +146,19 @@
               <div class="form__checkboxs-list">
                 <div class="form__fieldset-container form__fieldset-container--checkbox">
                   <input class="form__control form__control--checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
-                  <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
+                  <label class="form__label form__label--checkbox" for="sweetener" tabindex="0">Сахарозаменитель</label>
                 </div>
                 <div class="form__fieldset-container form__fieldset-container--checkbox">
                   <input class="form__control form__control--checkbox" type="checkbox" id="water" name="water">
-                  <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
+                  <label class="form__label form__label--checkbox" for="water" tabindex="0">Питьевая вода</label>
                 </div>
                 <div class="form__fieldset-container form__fieldset-container--checkbox">
                   <input class="form__control form__control--checkbox" type="checkbox" id="milk" name="milk">
-                  <label class="form__label  form__label--checkbox" for="milk">Молоко</label>
+                  <label class="form__label  form__label--checkbox" for="milk" tabindex="0">Молоко</label>
                 </div>
                 <div class="form__fieldset-container form__fieldset-container--checkbox">
                   <input class="form__control form__control--checkbox" type="checkbox" id="vitamins" name="vitamins">
-                  <label class="form__label  form__label--checkbox" for="vitamins">Витамины</label>
+                  <label class="form__label  form__label--checkbox" for="vitamins" tabindex="0">Витамины</label>
                 </div>
               </div>
             </div>

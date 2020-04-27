@@ -2,11 +2,15 @@
   display: flex;
   justify-content: space-between;
   min-height: 65px;
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .nav-wrapper {
     padding: 0;
+    margin: 0;
+    width: auto;
   }
 }

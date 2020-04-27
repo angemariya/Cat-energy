@@ -50,6 +50,7 @@
 
 .good-card__element {
   padding: 0;
+  display: block;
 }
 
 .good-card__wrapper {
@@ -67,8 +68,10 @@
       position: absolute;
       width: 34px;
       height: 34px;
-      top: 7px;
-      background-image: url("../../img/icon-plus-mobile.svg");
+      top: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/icon-plus-mobile.svg");
       background-repeat: no-repeat;
     }
   }
@@ -189,8 +192,10 @@
     align-items: center;
     margin-right: 80px;
     margin-top: 143px;
-    padding: 20px;
+    padding-top: 20px;
     padding-bottom: 40px;
+    padding-left: 31px;
+    padding-right: 30px;
 
     &:nth-of-type(4n) {
       margin-right: 0;
