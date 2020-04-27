@@ -150,40 +150,41 @@
     color: $grey-text;
   }
 
-  &:focus + .form__icon-email,
-  &:focus + .form__icon-phone {
-    fill: #222222;
-  }
-
-  &:hover + .form__icon-email,
-  &:hover + .form__icon-phone {
-    fill: $green;
-  }
-
-  &:invalid + .form__icon-email,
-  &:invalid + .form__icon-phone {
-    fill: $input-error;
-  }
-
-  &:focus:invalid + .form__icon-email,
-  &:focus:invalid + .form__icon-phone {
-    fill: $input-error;
+  &:hover {
+    outline: 1px solid $radio;
   }
 
   &:focus {
     outline: 2px solid $input-active;
 
     &:invalid {
-      outline: 2px solid $input-active;
+      outline: 2px solid $input-error;
     }
   }
 
-  &:invalid {
-    outline: 2px solid $input-error;
+  &:focus + .form__icon-email,
+  &:focus + .form__icon-phone {
+    fill: $green;
   }
 
-  &:hover {
-    outline: 1px solid $radio;
+  &:hover + .form__icon-email,
+  &:hover + .form__icon-phone {
+    fill: #222222;
+  }
+
+  &:focus:hover + .form__icon-email,
+  &:focus:hover + .form__icon-phone {
+    fill: $green;
+  }
+
+  // &:invalid + .form__icon-email,
+  // &:invalid + .form__icon-phone {
+  //   fill: $input-error;
+  // }
+
+  &:focus:invalid + .form__icon-email,
+  &:focus:invalid + .form__icon-phone {
+    fill: $input-error;
   }
 }
 
@@ -370,6 +371,7 @@
 
     &--text {
       padding-left: 19px;
+      padding-right: 30px;
       font-size: 20px;
     }
 

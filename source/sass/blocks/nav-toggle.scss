@@ -9,7 +9,7 @@
   display: block;
   width: 25px;
   height: 2px;
-  background-color: $black-brown;
+  background-color: transparent;
   position: relative;
 
   &::before {
@@ -30,6 +30,36 @@
     width: 25px;
     height: 2px;
     background-color: $black-brown;
+  }
+}
+
+.nav-toggle__hamburger--close {
+  display: block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $black-brown;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $black-brown;
+    transform: rotate(-45deg);
   }
 }
 
