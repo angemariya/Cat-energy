@@ -42,16 +42,16 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header header--background">
-      <nav class="nav">
+      <nav class="nav nav--nojs nav--closed">
         <div class="nav-wrapper">
-          <a class="nav-logo" href="#">
+          <a class="nav-logo">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="nav-logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
             </picture>
           </a>
-          <button class="nav-toggle" type="button"><span class="nav-toggle__hamburger nav-toggle__hamburger--close" aria-label="Меню"></span></button>
+          <button class="nav-toggle" type="button" aria-label="Открыть меню"></button>
         </div>
         <ul class="nav-list">
           <li class="nav-list__item nav-list__item--active"><a class="nav-list__link text-white">Главная</a></li>
@@ -254,5 +254,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

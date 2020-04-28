@@ -95,7 +95,7 @@
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
     top: 5px;
-    left: 96px;
+    right: -35px;
   }
 
   &:hover::after {
@@ -116,10 +116,10 @@
     padding-left: 52px;
     padding-bottom: 62px;
     padding-right: 285px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    // justify-content: space-between;
     margin-top: 0;
     margin-bottom: 30px;
   }
@@ -178,8 +178,8 @@
     font-size: 20px;
 
     &::after {
-      top: 4px;
-      left: 131px;
+      top: 9px;
+      right: -49px;
     }
   }
 }

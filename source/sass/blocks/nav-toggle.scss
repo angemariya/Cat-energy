@@ -1,66 +1,26 @@
 .nav-toggle {
+  display: block;
   border: none;
-  background-color: transparent;
-  width: auto;
-  cursor: pointer;
-}
-
-.nav-toggle__hamburger {
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: transparent;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    width: 25px;
-    height: 2px;
-    background-color: $black-brown;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 25px;
-    height: 2px;
-    background-color: $black-brown;
-  }
-}
-
-.nav-toggle__hamburger--close {
-  display: block;
+  background-color: white;
   width: 19px;
-  height: 19px;
+  height: 18px;
+  position: absolute;
+  top: 23px;
+  right: 22px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+
+  &--opened {
+    background-image: url("../img/m-close-svg.svg");
+  }
+
+  &--closed {
+    background-image: url("../img/mobile-menu-svg.svg");
+  }
+}
+
+.nav-wrapper {
   position: relative;
-  background-color: transparent;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 20px;
-    height: 2px;
-    background-color: $black-brown;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 20px;
-    height: 2px;
-    background-color: $black-brown;
-    transform: rotate(-45deg);
-  }
 }
 
 @media (min-width: $tablet-width) {
