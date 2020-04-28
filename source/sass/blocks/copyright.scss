@@ -55,6 +55,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .copyright {
+    padding-bottom: 4px;
+  }
+
   .copyright__img {
     margin-left: 25px;
   }

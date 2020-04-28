@@ -1,3 +1,17 @@
+@media (max-width: $only-mobile-width) {
+  .nav--opened .nav-list {
+    display: block;
+  }
+
+  .nav--closed .nav-list {
+    display: none;
+  }
+
+  .nav--nojs .nav-list {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .nav {
     width: 768px;
