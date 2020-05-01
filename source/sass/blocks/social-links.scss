@@ -1,6 +1,6 @@
 .social-links {
   @include ul-reset ();
-  width: 295px;
+  width: 280px;
   border-bottom: 1px solid $gray-bottom;
   border-top: 1px solid $gray-bottom;
   display: flex;
@@ -14,7 +14,7 @@
 }
 
 .social-links__item {
-  padding: 0 20px;
+  padding: 0 19px;
   padding-bottom: 14px;
 }
 
@@ -62,9 +62,3 @@
     }
   }
 }
-
-// @media (min-width: $desktop-width) {
-//   .social-link {
-//     padding-left: 76px;
-//   }
-// }
