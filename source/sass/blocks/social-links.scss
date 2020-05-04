@@ -21,11 +21,14 @@
 .social-links__link {
   display: block;
 
-  &:hover path {
-    fill: $green;
+  &:hover,
+  &:focus {
+    svg {
+      fill: $green;
+    }
   }
 
-  &:active path {
+  &:active svg {
     fill: $green;
     opacity: 0.3;
   }
