@@ -3,6 +3,7 @@
   font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -10,5 +11,6 @@
   font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
+  font-display: swap;
   font-style: normal;
 }

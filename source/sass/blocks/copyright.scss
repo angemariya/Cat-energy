@@ -21,19 +21,15 @@
   &:active .copyright__text {
     opacity: 0.3;
   }
-}
 
-.copyright__img {
-  &:hover path {
+  &:hover svg {
     fill: $green;
   }
 
-  &:active {
-    fill: $green;
+  &:active svg {
     opacity: 0.3;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .copyright {
@@ -56,7 +52,7 @@
 
 @media (min-width: $desktop-width) {
   .copyright {
-    padding-bottom: 4px;
+    padding-bottom: 12px;
   }
 
   .copyright__img {

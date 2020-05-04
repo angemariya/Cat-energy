@@ -12,10 +12,6 @@
     padding-left: 64px;
     margin-bottom: 7px;
 
-    &:active {
-      opacity: 0.3;
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -31,6 +27,10 @@
       &::before {
         border: 1px solid $radio-hvr;
       }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
 
     //точка у радио
@@ -177,11 +177,6 @@
     fill: $green;
   }
 
-  // &:invalid + .form__icon-email,
-  // &:invalid + .form__icon-phone {
-  //   fill: $input-error;
-  // }
-
   &:focus:invalid + .form__icon-email,
   &:focus:invalid + .form__icon-phone {
     fill: $input-error;
@@ -226,17 +221,20 @@
   }
 }
 
+.form__fieldset-wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+}
+
 .form__fieldset {
   border: none;
   border-bottom: 1px solid $inside;
   padding: 0;
   margin: 0;
-
-  &--container {
-    margin-bottom: 13px;
-    display: flex;
-    align-items: center;
-  }
 
   &--name {
     padding-top: 23px;
@@ -288,12 +286,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form__fieldset-wrapper {
+    border: none;
+    margin-bottom: 20px;
+  }
+
   .form__fieldset {
     border: none;
-
-    &--container {
-      margin-bottom: 20px;
-    }
 
     &--name {
       padding-top: 49px;
@@ -339,6 +338,7 @@
         left: 15px;
       }
     }
+
 
     &--checkbox {
       padding-left: 59px;
@@ -431,7 +431,6 @@
       margin-right: 64px;
     }
 
-
     &--email {
       margin-bottom: 21px;
     }
@@ -448,11 +447,9 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $tab-max-width) {
-  .form__fieldset-container {
-    &--checkbox {
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
+  .form__fieldset-container--checkbox {
+    &:nth-child(2n) {
+      margin-right: 0;
     }
   }
 }
